@@ -21,7 +21,7 @@ not included; `bench/sealed/make_mac_files.py` recreates them on a Mac.
 
 `bench/rankings/rank_tables/` holds program names and sizes parsed from Matt Mahoney's public pages, the
 [Large Text Compression Benchmark](https://mattmahoney.net/dc/text.html) and the
-[Silesia Open Source Compression Benchmark](https://mattmahoney.net/dc/silesia.html), as saved on 13 November 2026.
+[Silesia Open Source Compression Benchmark](https://mattmahoney.net/dc/silesia.html), as saved on 14 November 2026.
 FluidCompressor's own entries are local measurements, not official listings.
 
 ## The enwik9 entry

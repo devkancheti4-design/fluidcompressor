@@ -32,14 +32,16 @@ transcripts, unused regions of AI-API files, and six system binaries and fonts. 
 
 | benchmark | FluidCompressor | rank |
 |---|---:|---|
-| [Large Text Compression Benchmark](https://mattmahoney.net/dc/text.html): enwik9 + zipped decompressor | 132,672,138 | **31 of 234** |
+| [Large Text Compression Benchmark](https://mattmahoney.net/dc/text.html): enwik9 + zipped decompressor | 132,672,138 | **35 of 239** |
 | [Silesia Open Source Compression Benchmark](https://mattmahoney.net/dc/silesia.html): 12 files, 211,938,580 bytes | 38,820,251 | **60 of 324** |
 | merged: the 75 programs listed in both tables | score 1.311 | **4 of 75**, behind paq8px, cmix and gleipnir |
 
 **Rankings page: https://devkancheti4-design.github.io/fluidcompressor/** (all 75 programs, sizes against speed).
 
 The merged score is the geometric mean of a program's two sizes, each divided by the best in the set; each program is its
-best entry in each table. Tables saved 13 November 2026. FluidCompressor's entries are local measurements on an Apple
+best entry in each table. Tables saved 14 November 2026. Since the 13 November copy, the LTCB table gained four cmix-family entries (one
+replacing cmix-neif 1.0) and DNA-4, moving FluidCompressor from 31st to 35th there; the merged set and its rank did
+not change. FluidCompressor's entries are local measurements on an Apple
 M4 Pro, not official listings. `python3 bench/rankings/merge_rank.py` rebuilds the ranking from the saved tables
 (`bench/rankings/merged_rank.md` has all 75 rows). The enwik9 entry puts the enwik9-specific preprocessing of
 [fx2-cmix](https://github.com/kaitz/fx2-cmix) by Kaido Orav and Byron Knoll (GPL-3.0, not included) in front of

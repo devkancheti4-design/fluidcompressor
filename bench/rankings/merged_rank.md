@@ -1,6 +1,6 @@
 # Merged rank: enwik9 (LTCB) + Silesia
 
-Tables saved 13 Nov 2026. Each program is its best entry in each table; only programs in both
+Tables saved 14 Nov 2026. Each program is its best entry in each table; only programs in both
 tables are ranked. FluidCompressor is a local measurement, not an official listing.
 
 | rank | program | score | enwik9 + decompressor | # | Silesia total | # |

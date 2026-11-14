@@ -1,7 +1,8 @@
 """merge_rank.py -- one merged rank from Matt Mahoney's two largest public compression tables:
 the Large Text Compression Benchmark (enwik9) and the Silesia Open Source Compression Benchmark.
     python3 bench/rankings/merge_rank.py   -> prints the ranking, writes merged_rank.md and merged.json next to itself
-Tables: the pages as saved on 13 Nov 2026, parsed into rank_tables/ltcb_rows.json and rank_tables/silesia_rows.json.
+Tables: the two pages as saved on 14 Nov 2026 (tools/parse_ltcb.py reads the LTCB page), parsed into
+rank_tables/ltcb_rows.json and rank_tables/silesia_rows.json.
 Rules:
   - a program is its first name token, minus a separated version ("_v217", "-1.65.final"); digits that are part of a
     name are kept (paq8l, paq9a, fp8, bzip2, bzip3, cmm4 stay distinct); pipelines ("precomp | cmix") are their own
@@ -14,6 +15,7 @@ Rules:
 import json, math, os, re
 HERE = os.path.dirname(os.path.abspath(__file__)); T = os.path.join(HERE, 'rank_tables')
 FLUID_E9, FLUID_DEC, FLUID_SIL = 132510285, 161853, 38820251       # enwik9 archive, zipped decompressor, Silesia total
+SAVED = '14 Nov 2026'
 ALIAS = {'zling': 'libzling', 'zling_demo': 'libzling', 'ocamyd-1.65.final': 'ocamyd'}
 PACKAGED = ('drt', 'epmopt')       # LTCB lists a same-author preprocessor + compressor as that compressor
 def prog(name):
@@ -61,10 +63,10 @@ for i, p in enumerate(order):
                      bytes_rank=bytes_rank[p], comp_ns_per_byte=c, decomp_ns_per_byte=d, note=''))
 fl = [r for r in rows if r['ours']][0]           # measured locally on one Apple M4 Pro core (sealed and Silesia runs)
 fl.update(comp_ns_per_byte=1200, decomp_ns_per_byte=1140, note='Local measurement on an Apple M4 Pro, 14 Nov 2026. Not an official listing.')
-json.dump(dict(meta=dict(ltcb_programs=len(lt), silesia_programs=len(st), merged_programs=n, tables_saved='13 Nov 2026',
+json.dump(dict(meta=dict(ltcb_programs=len(lt), silesia_programs=len(st), merged_programs=n, tables_saved=SAVED,
                          ltcb_url='https://mattmahoney.net/dc/text.html', silesia_url='https://mattmahoney.net/dc/silesia.html'), rows=rows),
           open(os.path.join(HERE, 'merged.json'), 'w'), indent=1)
-md = ['# Merged rank: enwik9 (LTCB) + Silesia', '', 'Tables saved 13 Nov 2026. Each program is its best entry in each table; only programs in both',
+md = ['# Merged rank: enwik9 (LTCB) + Silesia', '', 'Tables saved ' + SAVED + '. Each program is its best entry in each table; only programs in both',
       'tables are ranked. FluidCompressor is a local measurement, not an official listing.', '',
       '| rank | program | score | enwik9 + decompressor | # | Silesia total | # |', '|---:|---|---:|---:|---:|---:|---:|']
 for r in rows:
@@ -72,5 +74,12 @@ for r in rows:
     md.append('| %d | %s | %.4f | %s | %d | %s | %d |' % (r['rank'], nm, r['score'], format(r['enwik9_total'], ','), r['enwik9_rank_in_set'], format(r['silesia_total'], ','), r['silesia_rank_in_set']))
 open(os.path.join(HERE, 'merged_rank.md'), 'w').write('\n'.join(md) + '\n')
 f = [r for r in rows if r['ours']][0]
+cards = [dict(benchmark='Large Text Compression Benchmark', short='LTCB (enwik9)', url='https://mattmahoney.net/dc/text.html',
+              corpus='enwik9: the first 10^9 bytes of an English Wikipedia dump', measure='compressed enwik9 plus the zipped decompressor',
+              programs_listed=len(lt), fluid_total=FLUID_E9 + FLUID_DEC, fluid_rank=f['enwik9_rank_full'], ranked_with_fluid=len(lt) + 1, saved=SAVED),
+         dict(benchmark='Silesia Open Source Compression Benchmark', short='Silesia', url='https://mattmahoney.net/dc/silesia.html',
+              corpus='the Silesia corpus: 12 files, 211,938,580 bytes of mixed data', measure='total compressed size of the 12 files',
+              programs_listed=len(st), fluid_total=FLUID_SIL, fluid_rank=f['silesia_rank_full'], ranked_with_fluid=len(st) + 1, saved=SAVED)]
+json.dump(dict(rows=cards), open(os.path.join(HERE, 'tables.json'), 'w'), indent=1)
 print('FluidCompressor: %d of %d merged | LTCB %d of %d | Silesia %d of %d' % (f['rank'], n, f['enwik9_rank_full'], len(lt) + 1, f['silesia_rank_full'], len(st) + 1))
 for r in rows[:8]: print('  %2d  %-16s %.4f' % (r['rank'], r['program'], r['score']))

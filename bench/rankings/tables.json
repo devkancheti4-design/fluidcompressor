@@ -6,11 +6,11 @@
    "url": "https://mattmahoney.net/dc/text.html",
    "corpus": "enwik9: the first 10^9 bytes of an English Wikipedia dump",
    "measure": "compressed enwik9 plus the zipped decompressor",
-   "programs_listed": 233,
+   "programs_listed": 238,
    "fluid_total": 132672138,
-   "fluid_rank": 31,
-   "ranked_with_fluid": 234,
-   "saved": "13 Nov 2026"
+   "fluid_rank": 35,
+   "ranked_with_fluid": 239,
+   "saved": "14 Nov 2026"
   },
   {
    "benchmark": "Silesia Open Source Compression Benchmark",
@@ -22,7 +22,7 @@
    "fluid_total": 38820251,
    "fluid_rank": 60,
    "ranked_with_fluid": 324,
-   "saved": "13 Nov 2026"
+   "saved": "14 Nov 2026"
   }
  ]
 }
