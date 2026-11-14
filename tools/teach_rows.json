@@ -1,0 +1,464 @@
+{
+ "rows": [
+  {
+   "kind": "logs",
+   "name": "Android",
+   "state": 30,
+   "best": 3,
+   "bytes": {
+    "cold": 6614,
+    "lesson": 6363,
+    "real": 5703,
+    "both": 5645
+   }
+  },
+  {
+   "kind": "logs",
+   "name": "Apache",
+   "state": 30,
+   "best": 3,
+   "bytes": {
+    "cold": 1900,
+    "lesson": 1553,
+    "real": 1637,
+    "both": 1519
+   }
+  },
+  {
+   "kind": "logs",
+   "name": "BGL",
+   "state": 30,
+   "best": 3,
+   "bytes": {
+    "cold": 15493,
+    "lesson": 14994,
+    "real": 14474,
+    "both": 14346
+   }
+  },
+  {
+   "kind": "logs",
+   "name": "HDFS",
+   "state": 30,
+   "best": 3,
+   "bytes": {
+    "cold": 16995,
+    "lesson": 16611,
+    "real": 16579,
+    "both": 16468
+   }
+  },
+  {
+   "kind": "logs",
+   "name": "HPC",
+   "state": 30,
+   "best": 3,
+   "bytes": {
+    "cold": 5965,
+    "lesson": 5865,
+    "real": 5756,
+    "both": 5738
+   }
+  },
+  {
+   "kind": "logs",
+   "name": "Hadoop",
+   "state": 30,
+   "best": 3,
+   "bytes": {
+    "cold": 2618,
+    "lesson": 2401,
+    "real": 2024,
+    "both": 1988
+   }
+  },
+  {
+   "kind": "logs",
+   "name": "HealthApp",
+   "state": 30,
+   "best": 2,
+   "bytes": {
+    "cold": 3662,
+    "lesson": 3613,
+    "real": 3264,
+    "both": 3275
+   }
+  },
+  {
+   "kind": "logs",
+   "name": "Linux",
+   "state": 30,
+   "best": 3,
+   "bytes": {
+    "cold": 4521,
+    "lesson": 4146,
+    "real": 3682,
+    "both": 3651
+   }
+  },
+  {
+   "kind": "logs",
+   "name": "Mac",
+   "state": 30,
+   "best": 3,
+   "bytes": {
+    "cold": 17249,
+    "lesson": 16655,
+    "real": 15678,
+    "both": 15544
+   }
+  },
+  {
+   "kind": "logs",
+   "name": "OpenSSH",
+   "state": 30,
+   "best": 3,
+   "bytes": {
+    "cold": 2286,
+    "lesson": 2006,
+    "real": 1915,
+    "both": 1865
+   }
+  },
+  {
+   "kind": "logs",
+   "name": "OpenStack",
+   "state": 46,
+   "best": 3,
+   "bytes": {
+    "cold": 16277,
+    "lesson": 15681,
+    "real": 15585,
+    "both": 15392
+   }
+  },
+  {
+   "kind": "logs",
+   "name": "Proxifier",
+   "state": 30,
+   "best": 2,
+   "bytes": {
+    "cold": 7042,
+    "lesson": 6865,
+    "real": 6539,
+    "both": 6547
+   }
+  },
+  {
+   "kind": "logs",
+   "name": "Spark",
+   "state": 30,
+   "best": 3,
+   "bytes": {
+    "cold": 2914,
+    "lesson": 2726,
+    "real": 2550,
+    "both": 2539
+   }
+  },
+  {
+   "kind": "logs",
+   "name": "Thunderbird",
+   "state": 30,
+   "best": 3,
+   "bytes": {
+    "cold": 7638,
+    "lesson": 7351,
+    "real": 6771,
+    "both": 6738
+   }
+  },
+  {
+   "kind": "logs",
+   "name": "Windows",
+   "state": 30,
+   "best": 3,
+   "bytes": {
+    "cold": 3263,
+    "lesson": 3087,
+    "real": 2932,
+    "both": 2860
+   }
+  },
+  {
+   "kind": "logs",
+   "name": "Zookeeper",
+   "state": 30,
+   "best": 3,
+   "bytes": {
+    "cold": 5690,
+    "lesson": 5391,
+    "real": 5024,
+    "both": 5004
+   }
+  },
+  {
+   "kind": "ai-chat",
+   "name": "wildchat 64K",
+   "state": 14,
+   "best": 3,
+   "bytes": {
+    "cold": 9876,
+    "lesson": 9073,
+    "real": 7335,
+    "both": 7316
+   }
+  },
+  {
+   "kind": "ai-api",
+   "name": "embeddings 64K",
+   "state": 5,
+   "best": 3,
+   "bytes": {
+    "cold": 21854,
+    "lesson": 21334,
+    "real": 21266,
+    "both": 21249
+   }
+  },
+  {
+   "kind": "text",
+   "name": "enwik8 64K",
+   "state": 13,
+   "best": 2,
+   "bytes": {
+    "cold": 19683,
+    "lesson": 19363,
+    "real": 14165,
+    "both": 14244
+   }
+  },
+  {
+   "kind": "ai-chat",
+   "name": "wildchat 256K",
+   "state": 30,
+   "best": 3,
+   "bytes": {
+    "cold": 36170,
+    "lesson": 35007,
+    "real": 30414,
+    "both": 30348
+   }
+  },
+  {
+   "kind": "ai-api",
+   "name": "embeddings 256K",
+   "state": 21,
+   "best": 3,
+   "bytes": {
+    "cold": 86187,
+    "lesson": 85284,
+    "real": 85095,
+    "both": 85073
+   }
+  },
+  {
+   "kind": "text",
+   "name": "enwik8 256K",
+   "state": 29,
+   "best": 2,
+   "bytes": {
+    "cold": 67317,
+    "lesson": 66992,
+    "real": 54626,
+    "both": 54905
+   }
+  },
+  {
+   "kind": "ai-chat",
+   "name": "wildchat 1M",
+   "state": 46,
+   "best": 3,
+   "bytes": {
+    "cold": 132729,
+    "lesson": 131185,
+    "real": 121023,
+    "both": 120820
+   }
+  },
+  {
+   "kind": "ai-api",
+   "name": "embeddings 1M",
+   "state": 37,
+   "best": 3,
+   "bytes": {
+    "cold": 341881,
+    "lesson": 340520,
+    "real": 339875,
+    "both": 339788
+   }
+  },
+  {
+   "kind": "text",
+   "name": "enwik8 1M",
+   "state": 45,
+   "best": 3,
+   "bytes": {
+    "cold": 251583,
+    "lesson": 251666,
+    "real": 225287,
+    "both": 225253
+   }
+  },
+  {
+   "kind": "bin-dickens",
+   "name": "dickens 64K",
+   "state": 12,
+   "best": 2,
+   "bytes": {
+    "cold": 19865,
+    "real": 14776
+   }
+  },
+  {
+   "kind": "bin-samba",
+   "name": "samba 64K",
+   "state": 8,
+   "best": 2,
+   "bytes": {
+    "cold": 2648,
+    "real": 2546
+   }
+  },
+  {
+   "kind": "bin-x-ray",
+   "name": "x-ray 64K",
+   "state": 8,
+   "best": 2,
+   "bytes": {
+    "cold": 32280,
+    "real": 30048
+   }
+  },
+  {
+   "kind": "bin-mozilla",
+   "name": "mozilla 64K",
+   "state": 0,
+   "best": 0,
+   "bytes": {
+    "cold": 22736,
+    "real": 23560
+   }
+  },
+  {
+   "kind": "bin-dickens",
+   "name": "dickens 256K",
+   "state": 28,
+   "best": 2,
+   "bytes": {
+    "cold": 68626,
+    "real": 56818
+   }
+  },
+  {
+   "kind": "bin-samba",
+   "name": "samba 256K",
+   "state": 24,
+   "best": 2,
+   "bytes": {
+    "cold": 9246,
+    "real": 9115
+   }
+  },
+  {
+   "kind": "bin-x-ray",
+   "name": "x-ray 256K",
+   "state": 24,
+   "best": 2,
+   "bytes": {
+    "cold": 124510,
+    "real": 119815
+   }
+  },
+  {
+   "kind": "bin-mozilla",
+   "name": "mozilla 256K",
+   "state": 16,
+   "best": 0,
+   "bytes": {
+    "cold": 80636,
+    "real": 82611
+   }
+  },
+  {
+   "kind": "bin-dickens",
+   "name": "dickens 1M",
+   "state": 44,
+   "best": 2,
+   "bytes": {
+    "cold": 245074,
+    "real": 220876
+   }
+  },
+  {
+   "kind": "bin-samba",
+   "name": "samba 1M",
+   "state": 40,
+   "best": 2,
+   "bytes": {
+    "cold": 31192,
+    "real": 30554
+   }
+  },
+  {
+   "kind": "bin-x-ray",
+   "name": "x-ray 1M",
+   "state": 40,
+   "best": 2,
+   "bytes": {
+    "cold": 483708,
+    "real": 475809
+   }
+  },
+  {
+   "kind": "bin-mozilla",
+   "name": "mozilla 1M",
+   "state": 32,
+   "best": 0,
+   "bytes": {
+    "cold": 200986,
+    "real": 203723
+   }
+  }
+ ],
+ "label": {
+  "0": 0,
+  "5": 3,
+  "8": 2,
+  "12": 2,
+  "13": 2,
+  "14": 3,
+  "16": 0,
+  "21": 3,
+  "24": 2,
+  "28": 2,
+  "29": 2,
+  "30": 3,
+  "32": 0,
+  "37": 3,
+  "40": 2,
+  "44": 2,
+  "45": 3,
+  "46": 3
+ },
+ "KL": {
+  "ai-api": 1.047721814194713,
+  "ai-chat": 3.215371855128557,
+  "bin-dickens": 0.0,
+  "bin-mozilla": 0.0,
+  "bin-samba": 0.0,
+  "bin-x-ray": 0.0,
+  "logs": 3.7762542467266735,
+  "text": 0.48279037984461093
+ },
+ "KR": {
+  "ai-api": 1.2670124264680283,
+  "ai-chat": 15.91374066906276,
+  "bin-dickens": 17.206306647626267,
+  "bin-mozilla": -2.449278238007846,
+  "bin-samba": 2.045396255450116,
+  "bin-x-ray": 3.7707814633362813,
+  "logs": 11.109758488594139,
+  "text": 18.852592955716986
+ }
+}

@@ -1,0 +1,6 @@
+# file	bytes	mac archive	mac crc32	mac compress s	mac decompress s
+test/enwik9_150M_64K	65536	14265	683d5ffd	3.441	3.432
+test/Apache_csv	258805	3184	51c4ab02	18.026	2.235
+test/wildchat_05_64K	65536	8201	7fbbddc3	4.839	4.966
+test/embeddings_00_256K	262144	84867	bfaf3c4c	4.798	4.827
+test/logprobs_00_256K	262144	18272	d4430714	2.028	2.044

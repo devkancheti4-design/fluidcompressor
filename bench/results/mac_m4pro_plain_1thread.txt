@@ -1,0 +1,46 @@
+FluidCompressor edge test
+machine: Apple M4 Pro | 12 logical cores | 24.0 GB RAM
+files: 38 from tests_ref.txt, 1 thread
+
+  #  file                           bytes   archive  route                 c s     d s  exact  same as Mac
+  1  test/enwik9_150M_64K           65536     14265  text/R/route         3.44    3.43  yes    -
+  2  test/enwik9_350M_256K         262144     54101  text/R/route         3.76    3.77  yes    -
+  3  test/enwik9_550M_1024K       1048576     75602  text/B/measured     26.43    6.37  yes    -
+  4  test/enwik9_950M_64K           65536     13994  text/R/route         3.35    3.37  yes    -
+  5  test/Android_csv              300000      6007  logs/B/measured     20.26    2.32  yes    -
+  6  test/Apache_csv               258805      3184  logs/B/measured     18.03    2.23  yes    -
+  7  test/BGL_csv                  300000     17630  logs/B/route         2.26    2.31  yes    -
+  8  test/HDFS_csv                 300000     16885  logs/B/measured     20.34    2.29  yes    -
+  9  test/HPC_csv                  217818     11885  logs/B/measured     18.11    2.20  yes    -
+ 10  test/Hadoop_csv               300000      5363  logs/B/measured     20.31    2.27  yes    -
+ 11  test/HealthApp_csv            283128      6668  logs/B/measured     20.23    2.26  yes    -
+ 12  test/Linux_csv                300000      4710  logs/B/measured     20.19    2.27  yes    -
+ 13  test/Mac_csv                  300000     11702  logs/B/measured     20.73    2.35  yes    -
+ 14  test/OpenSSH_csv              300000      4103  logs/B/measured     20.23    2.27  yes    -
+ 15  test/OpenStack_csv            300000      8473  logs/B/measured     20.35    2.31  yes    -
+ 16  test/Proxifier_csv            300000      7785  logs/B/measured     20.35    2.40  yes    -
+ 17  test/Spark_csv                300000      4441  logs/B/measured     20.40    2.27  yes    -
+ 18  test/Thunderbird_csv          300000      7844  logs/B/route         2.28    2.33  yes    -
+ 19  test/Windows_csv              300000      4265  logs/B/measured     20.19    2.34  yes    -
+ 20  test/Zookeeper_csv            300000      7375  logs/B/route         2.40    2.46  yes    -
+ 21  test/wildchat_05_64K           65536      8201  chat/B/route         4.84    4.97  yes    -
+ 22  test/wildchat_05_1M          1048576    120380  chat/B/measured     23.57    5.22  yes    -
+ 23  test/wildchat_07_64K           65536      7167  chat/B/route         4.15    4.18  yes    -
+ 24  test/wildchat_07_1M          1048576    120870  chat/B/measured     23.20    5.21  yes    -
+ 25  test/wildchat_12_64K           65536      8434  chat/B/measured     15.56    4.17  yes    -
+ 26  test/wildchat_12_1M          1048576    129724  chat/B/measured     24.04    5.63  yes    -
+ 27  test/wildchat_13_64K           65536      8873  chat/B/measured     15.57    4.14  yes    -
+ 28  test/wildchat_13_1M          1048576    129772  chat/B/measured     23.14    5.22  yes    -
+ 29  test/embeddings_00_256K       262144     84867  emb/B/route          4.80    4.83  yes    -
+ 30  test/embeddings_01_256K       262144     84946  emb/B/route          4.81    4.83  yes    -
+ 31  test/logprobs_00_256K         262144     18272  lp/R/route           2.03    2.04  yes    -
+ 32  test/logprobs_01_256K         262144     19141  lp/R/route           2.01    2.07  yes    -
+ 33  test/bash                    1048576    372665  text/B/measured     25.33    6.11  yes    -
+ 34  test/zsh                     1048576    385512  emb/B/measured      25.75    6.22  yes    -
+ 35  test/ksh                     1048576    373649  text/B/measured     25.64    6.14  yes    -
+ 36  test/Helvetica_ttc           1048576    305607  lp/R/measured       25.25    3.29  yes    -
+ 37  test/Arial_ttf                773236    319408  text/B/route         5.61    5.73  yes    -
+ 38  test/web2                    1048576    151583  text/B/route         6.02    6.09  yes    -
+
+total: 38 files, 17622683 bytes -> 2935353 (6.00x) | compress 564.9 s, decompress 139.9 s (summed) | wall 704.9 s on 1 thread
+round trips exact: 38 of 38 | archives byte-identical to the Mac: 0 of 38 | peak memory 1138 MB

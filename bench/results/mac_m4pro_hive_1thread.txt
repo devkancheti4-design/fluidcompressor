@@ -1,0 +1,63 @@
+FluidCompressor edge test, HIVE (each memory warmed once, every file a copy)
+machine: Apple M4 Pro | 12 logical cores | 24.0 GB RAM
+files: 38 from ht.txt, 1 thread
+
+encoding: 158 codings in 32 groups (one warm-up per memory group)
+  encode  1/32  memory emb/B, 26 files: warm-up 4.7 s, all 22.9 s
+  encode  2/32  memory chat/B, 26 files: warm-up 4.7 s, all 21.2 s
+  encode  3/32  memory lp/R, 26 files: warm-up 1.9 s, all 18.4 s
+  encode  4/32  memory text/B, 11 files: warm-up 4.7 s, all 19.9 s
+  encode  5/32  memory logs/B, 9 files: warm-up 1.8 s, all 14.1 s
+  encode  6/32  memory text/B, 11 files: warm-up 4.7 s, all 8.1 s
+  encode  7/32  memory logs/B, 18 files: warm-up 1.8 s, all 6.6 s
+  encode  8/32  memory text/R, 7 files: warm-up 3.1 s, all 4.3 s
+decoding: 38 files in 6 groups
+  decode  1/6  memory chat/B, 8 files: warm-up 4.3 s, all 9.7 s
+  decode  2/6  memory text/B, 5 files: warm-up 4.7 s, all 12.5 s
+  decode  3/6  memory logs/B, 16 files: warm-up 1.8 s, all 6.8 s
+  decode  4/6  memory emb/B, 3 files: warm-up 4.6 s, all 7.1 s
+  decode  5/6  memory lp/R, 3 files: warm-up 1.9 s, all 4.1 s
+  decode  6/6  memory text/R, 3 files: warm-up 3.1 s, all 3.7 s
+  #  file                           bytes   archive  route              code s     d s  exact  same as Mac
+  1  test/enwik9_150M_64K           65536     14265  text/R/route         0.11    0.12  yes    yes
+  2  test/enwik9_350M_256K         262144     54101  text/R/route         0.40    0.43  yes    yes
+  3  test/enwik9_550M_1024K       1048576     75602  text/B/measured      7.60    1.35  yes    yes
+  4  test/enwik9_950M_64K           65536     13994  text/R/route         0.10    0.11  yes    yes
+  5  test/Android_csv              300000      6007  logs/B/measured      1.89    0.33  yes    yes
+  6  test/Apache_csv               258805      3184  logs/B/measured      1.48    0.25  yes    yes
+  7  test/BGL_csv                  300000     17630  logs/B/route         0.32    0.34  yes    yes
+  8  test/HDFS_csv                 300000     16885  logs/B/measured      1.91    0.34  yes    yes
+  9  test/HPC_csv                  217818     11885  logs/B/measured      1.36    0.24  yes    yes
+ 10  test/Hadoop_csv               300000      5363  logs/B/measured      1.79    0.32  yes    yes
+ 11  test/HealthApp_csv            283128      6668  logs/B/measured      1.68    0.30  yes    yes
+ 12  test/Linux_csv                300000      4710  logs/B/measured      1.74    0.30  yes    yes
+ 13  test/Mac_csv                  300000     11702  logs/B/measured      2.11    0.37  yes    yes
+ 14  test/OpenSSH_csv              300000      4103  logs/B/measured      1.71    0.30  yes    yes
+ 15  test/OpenStack_csv            300000      8473  logs/B/measured      1.86    0.33  yes    yes
+ 16  test/Proxifier_csv            300000      7785  logs/B/measured      1.76    0.31  yes    yes
+ 17  test/Spark_csv                300000      4441  logs/B/measured      1.79    0.32  yes    yes
+ 18  test/Thunderbird_csv          300000      7844  logs/B/route         0.30    0.32  yes    yes
+ 19  test/Windows_csv              300000      4265  logs/B/measured      1.66    0.29  yes    yes
+ 20  test/Zookeeper_csv            300000      7375  logs/B/route         0.30    0.33  yes    yes
+ 21  test/wildchat_05_64K           65536      8201  chat/B/route         0.08    0.13  yes    yes
+ 22  test/wildchat_05_1M          1048576    120380  chat/B/measured      6.81    1.22  yes    yes
+ 23  test/wildchat_07_64K           65536      7167  chat/B/route         0.08    0.13  yes    yes
+ 24  test/wildchat_07_1M          1048576    120870  chat/B/measured      6.89    1.23  yes    yes
+ 25  test/wildchat_12_64K           65536      8434  chat/B/measured      0.50    0.09  yes    yes
+ 26  test/wildchat_12_1M          1048576    129724  chat/B/measured      7.19    1.29  yes    yes
+ 27  test/wildchat_13_64K           65536      8873  chat/B/measured      0.48    0.09  yes    yes
+ 28  test/wildchat_13_1M          1048576    129772  chat/B/measured      7.06    1.24  yes    yes
+ 29  test/embeddings_00_256K       262144     84867  emb/B/route          0.32    0.33  yes    yes
+ 30  test/embeddings_01_256K       262144     84946  emb/B/route          0.32    0.33  yes    yes
+ 31  test/logprobs_00_256K         262144     18272  lp/R/route           0.24    0.28  yes    yes
+ 32  test/logprobs_01_256K         262144     19141  lp/R/route           0.24    0.27  yes    yes
+ 33  test/bash                    1048576    372665  text/B/measured      9.84    1.79  yes    yes
+ 34  test/zsh                     1048576    385512  emb/B/measured       9.93    1.78  yes    yes
+ 35  test/ksh                     1048576    373649  text/B/measured      9.73    1.77  yes    yes
+ 36  test/Helvetica_ttc           1048576    305607  lp/R/measured        9.22    1.65  yes    yes
+ 37  test/Arial_ttf                773236    319408  text/B/route         1.21    1.32  yes    yes
+ 38  test/web2                    1048576    151583  text/B/route         1.54    1.61  yes    yes
+
+total: 38 files, 17622683 bytes -> 2935353 (6.00x)
+hive compress: 131.1 s wall (8 warm-ups for 158 codings) | decompress: 44.0 s wall (6 warm-ups) | 1 thread
+round trips exact: 38 of 38 | archives byte-identical to the Mac: 38 of 38 | peak memory 1943 MB

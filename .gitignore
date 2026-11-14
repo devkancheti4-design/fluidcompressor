@@ -1,0 +1,11 @@
+/fluid
+/build/
+bench/sealed/results*.txt
+bench/sealed/results*.tsv
+bench/sealed/test/bash
+bench/sealed/test/zsh
+bench/sealed/test/ksh
+bench/sealed/test/Helvetica_ttc
+bench/sealed/test/Arial_ttf
+bench/sealed/test/web2
+.DS_Store

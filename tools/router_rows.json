@@ -1,0 +1,2114 @@
+{
+ "design": [
+  {
+   "kind": "logs",
+   "name": "Androi d",
+   "n": 73871,
+   "sig": 22880,
+   "eyes": {
+    "hi": 0.0,
+    "zero": 0.0,
+    "dig": 0.206,
+    "json": 0.024,
+    "mark": 0.027,
+    "alpha": 0.591,
+    "nl": 6.8,
+    "flt": 1.6
+   },
+   "sizes": {
+    "none": 2891,
+    "logs": 1421,
+    "chat": 2525,
+    "emb": 2986,
+    "lp": 2674,
+    "text": 2514
+   },
+   "best": "logs"
+  },
+  {
+   "kind": "logs",
+   "name": "Apach d",
+   "n": 42989,
+   "sig": 10848,
+   "eyes": {
+    "hi": 0.0,
+    "zero": 0.0,
+    "dig": 0.179,
+    "json": 0.024,
+    "mark": 0.047,
+    "alpha": 0.548,
+    "nl": 11.9,
+    "flt": 0.0
+   },
+   "sizes": {
+    "none": 1223,
+    "logs": 847,
+    "chat": 1071,
+    "emb": 1244,
+    "lp": 1145,
+    "text": 1053
+   },
+   "best": "logs"
+  },
+  {
+   "kind": "logs",
+   "name": "BG d",
+   "n": 67065,
+   "sig": 21552,
+   "eyes": {
+    "hi": 0.0,
+    "zero": 0.0,
+    "dig": 0.435,
+    "json": 0.015,
+    "mark": 0.0,
+    "alpha": 0.322,
+    "nl": 7.6,
+    "flt": 2.7
+   },
+   "sizes": {
+    "none": 6280,
+    "logs": 5481,
+    "chat": 5962,
+    "emb": 6292,
+    "lp": 6035,
+    "text": 5915
+   },
+   "best": "logs"
+  },
+  {
+   "kind": "logs",
+   "name": "HDF d",
+   "n": 70898,
+   "sig": 21552,
+   "eyes": {
+    "hi": 0.0,
+    "zero": 0.0,
+    "dig": 0.382,
+    "json": 0.019,
+    "mark": 0.0,
+    "alpha": 0.443,
+    "nl": 7.2,
+    "flt": 9.4
+   },
+   "sizes": {
+    "none": 8327,
+    "logs": 7377,
+    "chat": 8187,
+    "emb": 8472,
+    "lp": 8250,
+    "text": 8175
+   },
+   "best": "logs"
+  },
+  {
+   "kind": "logs",
+   "name": "HP d",
+   "n": 26979,
+   "sig": 9264,
+   "eyes": {
+    "hi": 0.0,
+    "zero": 0.0,
+    "dig": 0.357,
+    "json": 0.0,
+    "mark": 0.005,
+    "alpha": 0.473,
+    "nl": 18.9,
+    "flt": 0.0
+   },
+   "sizes": {
+    "none": 3298,
+    "logs": 3041,
+    "chat": 3175,
+    "emb": 3327,
+    "lp": 3203,
+    "text": 3180
+   },
+   "best": "logs"
+  },
+  {
+   "kind": "logs",
+   "name": "Hadoo d",
+   "n": 98640,
+   "sig": 22880,
+   "eyes": {
+    "hi": 0.0,
+    "zero": 0.0,
+    "dig": 0.235,
+    "json": 0.022,
+    "mark": 0.013,
+    "alpha": 0.578,
+    "nl": 5.2,
+    "flt": 2.5
+   },
+   "sizes": {
+    "none": 3812,
+    "logs": 2357,
+    "chat": 3313,
+    "emb": 3920,
+    "lp": 3561,
+    "text": 3289
+   },
+   "best": "logs"
+  },
+  {
+   "kind": "logs",
+   "name": "HealthAp d",
+   "n": 47352,
+   "sig": 9840,
+   "eyes": {
+    "hi": 0.0,
+    "zero": 0.0,
+    "dig": 0.421,
+    "json": 0.035,
+    "mark": 0.039,
+    "alpha": 0.408,
+    "nl": 10.8,
+    "flt": 0.3
+   },
+   "sizes": {
+    "none": 3063,
+    "logs": 2365,
+    "chat": 2802,
+    "emb": 3161,
+    "lp": 2967,
+    "text": 2779
+   },
+   "best": "logs"
+  },
+  {
+   "kind": "logs",
+   "name": "Linu d",
+   "n": 52226,
+   "sig": 26208,
+   "eyes": {
+    "hi": 0.0,
+    "zero": 0.0,
+    "dig": 0.239,
+    "json": 0.037,
+    "mark": 0.031,
+    "alpha": 0.484,
+    "nl": 9.8,
+    "flt": 2.1
+   },
+   "sizes": {
+    "none": 1930,
+    "logs": 1321,
+    "chat": 1692,
+    "emb": 1985,
+    "lp": 1780,
+    "text": 1665
+   },
+   "best": "logs"
+  },
+  {
+   "kind": "logs",
+   "name": "Ma d",
+   "n": 80794,
+   "sig": 6496,
+   "eyes": {
+    "hi": 0.0,
+    "zero": 0.0,
+    "dig": 0.194,
+    "json": 0.035,
+    "mark": 0.02,
+    "alpha": 0.583,
+    "nl": 6.3,
+    "flt": 0.6
+   },
+   "sizes": {
+    "none": 9505,
+    "logs": 5065,
+    "chat": 8484,
+    "emb": 9568,
+    "lp": 8971,
+    "text": 8470
+   },
+   "best": "logs"
+  },
+  {
+   "kind": "logs",
+   "name": "OpenSS d",
+   "n": 59092,
+   "sig": 10848,
+   "eyes": {
+    "hi": 0.0,
+    "zero": 0.0,
+    "dig": 0.225,
+    "json": 0.034,
+    "mark": 0.035,
+    "alpha": 0.532,
+    "nl": 8.6,
+    "flt": 0.6
+   },
+   "sizes": {
+    "none": 1912,
+    "logs": 1209,
+    "chat": 1679,
+    "emb": 1991,
+    "lp": 1822,
+    "text": 1673
+   },
+   "best": "logs"
+  },
+  {
+   "kind": "logs",
+   "name": "OpenStac d",
+   "n": 131072,
+   "sig": 21616,
+   "eyes": {
+    "hi": 0.0,
+    "zero": 0.0,
+    "dig": 0.369,
+    "json": 0.023,
+    "mark": 0.009,
+    "alpha": 0.423,
+    "nl": 3.4,
+    "flt": 6.0
+   },
+   "sizes": {
+    "none": 8641,
+    "logs": 6425,
+    "chat": 8031,
+    "emb": 8771,
+    "lp": 8285,
+    "text": 8093
+   },
+   "best": "logs"
+  },
+  {
+   "kind": "logs",
+   "name": "Proxifie d",
+   "n": 58315,
+   "sig": 26976,
+   "eyes": {
+    "hi": 0.0,
+    "zero": 0.0,
+    "dig": 0.185,
+    "json": 0.033,
+    "mark": 0.018,
+    "alpha": 0.552,
+    "nl": 8.8,
+    "flt": 8.4
+   },
+   "sizes": {
+    "none": 2316,
+    "logs": 1752,
+    "chat": 2088,
+    "emb": 2374,
+    "lp": 2167,
+    "text": 2101
+   },
+   "best": "logs"
+  },
+  {
+   "kind": "logs",
+   "name": "Spar d",
+   "n": 49543,
+   "sig": 26720,
+   "eyes": {
+    "hi": 0.0,
+    "zero": 0.0,
+    "dig": 0.211,
+    "json": 0.033,
+    "mark": 0.007,
+    "alpha": 0.544,
+    "nl": 10.3,
+    "flt": 1.6
+   },
+   "sizes": {
+    "none": 1850,
+    "logs": 1089,
+    "chat": 1631,
+    "emb": 1976,
+    "lp": 1711,
+    "text": 1593
+   },
+   "best": "logs"
+  },
+  {
+   "kind": "logs",
+   "name": "Thunderbir d",
+   "n": 77229,
+   "sig": 21856,
+   "eyes": {
+    "hi": 0.0,
+    "zero": 0.0,
+    "dig": 0.279,
+    "json": 0.021,
+    "mark": 0.021,
+    "alpha": 0.469,
+    "nl": 6.6,
+    "flt": 9.4
+   },
+   "sizes": {
+    "none": 2523,
+    "logs": 1639,
+    "chat": 2325,
+    "emb": 2667,
+    "lp": 2388,
+    "text": 2290
+   },
+   "best": "logs"
+  },
+  {
+   "kind": "logs",
+   "name": "Window d",
+   "n": 78172,
+   "sig": 5216,
+   "eyes": {
+    "hi": 0.0,
+    "zero": 0.0,
+    "dig": 0.234,
+    "json": 0.025,
+    "mark": 0.0,
+    "alpha": 0.468,
+    "nl": 6.5,
+    "flt": 0.0
+   },
+   "sizes": {
+    "none": 3769,
+    "logs": 2459,
+    "chat": 3306,
+    "emb": 3918,
+    "lp": 3481,
+    "text": 3309
+   },
+   "best": "logs"
+  },
+  {
+   "kind": "logs",
+   "name": "Zookeepe d",
+   "n": 72504,
+   "sig": 38240,
+   "eyes": {
+    "hi": 0.0,
+    "zero": 0.0,
+    "dig": 0.279,
+    "json": 0.047,
+    "mark": 0.021,
+    "alpha": 0.47,
+    "nl": 7.0,
+    "flt": 16.3
+   },
+   "sizes": {
+    "none": 3674,
+    "logs": 2767,
+    "chat": 3286,
+    "emb": 3765,
+    "lp": 3460,
+    "text": 3290
+   },
+   "best": "logs"
+  },
+  {
+   "kind": "chat",
+   "name": "wildchat_04 0",
+   "n": 131072,
+   "sig": 17570,
+   "eyes": {
+    "hi": 0.11,
+    "zero": 0.0,
+    "dig": 0.214,
+    "json": 0.087,
+    "mark": 0.001,
+    "alpha": 0.448,
+    "nl": 0.1,
+    "flt": 4.2
+   },
+   "sizes": {
+    "none": 19514,
+    "logs": 19026,
+    "chat": 15779,
+    "emb": 19531,
+    "lp": 18951,
+    "text": 18447
+   },
+   "best": "chat"
+  },
+  {
+   "kind": "chat",
+   "name": "wildchat_04 3145728",
+   "n": 131072,
+   "sig": 17569,
+   "eyes": {
+    "hi": 0.086,
+    "zero": 0.0,
+    "dig": 0.25,
+    "json": 0.091,
+    "mark": 0.001,
+    "alpha": 0.434,
+    "nl": 0.0,
+    "flt": 5.0
+   },
+   "sizes": {
+    "none": 19255,
+    "logs": 18605,
+    "chat": 15139,
+    "emb": 19209,
+    "lp": 18190,
+    "text": 17469
+   },
+   "best": "chat"
+  },
+  {
+   "kind": "chat",
+   "name": "wildchat_06 0",
+   "n": 131072,
+   "sig": 17569,
+   "eyes": {
+    "hi": 0.072,
+    "zero": 0.0,
+    "dig": 0.221,
+    "json": 0.086,
+    "mark": 0.002,
+    "alpha": 0.466,
+    "nl": 0.1,
+    "flt": 5.5
+   },
+   "sizes": {
+    "none": 20982,
+    "logs": 20234,
+    "chat": 17117,
+    "emb": 20949,
+    "lp": 19647,
+    "text": 18551
+   },
+   "best": "chat"
+  },
+  {
+   "kind": "chat",
+   "name": "wildchat_06 3145728",
+   "n": 131072,
+   "sig": 17570,
+   "eyes": {
+    "hi": 0.178,
+    "zero": 0.0,
+    "dig": 0.18,
+    "json": 0.074,
+    "mark": 0.001,
+    "alpha": 0.436,
+    "nl": 0.1,
+    "flt": 4.8
+   },
+   "sizes": {
+    "none": 22591,
+    "logs": 21928,
+    "chat": 18038,
+    "emb": 22533,
+    "lp": 21500,
+    "text": 20535
+   },
+   "best": "chat"
+  },
+  {
+   "kind": "chat",
+   "name": "wildchat_08 0",
+   "n": 131072,
+   "sig": 17570,
+   "eyes": {
+    "hi": 0.148,
+    "zero": 0.0,
+    "dig": 0.164,
+    "json": 0.063,
+    "mark": 0.002,
+    "alpha": 0.471,
+    "nl": 0.1,
+    "flt": 4.1
+   },
+   "sizes": {
+    "none": 21865,
+    "logs": 21326,
+    "chat": 18187,
+    "emb": 21865,
+    "lp": 21256,
+    "text": 20564
+   },
+   "best": "chat"
+  },
+  {
+   "kind": "chat",
+   "name": "wildchat_08 3145728",
+   "n": 131072,
+   "sig": 17569,
+   "eyes": {
+    "hi": 0.043,
+    "zero": 0.0,
+    "dig": 0.262,
+    "json": 0.087,
+    "mark": 0.001,
+    "alpha": 0.461,
+    "nl": 0.0,
+    "flt": 4.1
+   },
+   "sizes": {
+    "none": 20517,
+    "logs": 20095,
+    "chat": 16989,
+    "emb": 20490,
+    "lp": 20198,
+    "text": 19771
+   },
+   "best": "chat"
+  },
+  {
+   "kind": "emb",
+   "name": "embeddings_03 0",
+   "n": 131072,
+   "sig": 32816,
+   "eyes": {
+    "hi": 0.0,
+    "zero": 0.0,
+    "dig": 0.837,
+    "json": 0.002,
+    "mark": 0.0,
+    "alpha": 0.005,
+    "nl": 0.0,
+    "flt": 44.3
+   },
+   "sizes": {
+    "none": 43275,
+    "logs": 43200,
+    "chat": 43038,
+    "emb": 42478,
+    "lp": 43975,
+    "text": 43251
+   },
+   "best": "emb"
+  },
+  {
+   "kind": "emb",
+   "name": "embeddings_03 4194304",
+   "n": 131072,
+   "sig": 32816,
+   "eyes": {
+    "hi": 0.0,
+    "zero": 0.0,
+    "dig": 0.838,
+    "json": 0.002,
+    "mark": 0.0,
+    "alpha": 0.004,
+    "nl": 0.0,
+    "flt": 44.6
+   },
+   "sizes": {
+    "none": 43350,
+    "logs": 43290,
+    "chat": 43125,
+    "emb": 42567,
+    "lp": 44033,
+    "text": 43330
+   },
+   "best": "emb"
+  },
+  {
+   "kind": "lp",
+   "name": "logprobs_03 0",
+   "n": 131072,
+   "sig": 16880,
+   "eyes": {
+    "hi": 0.0,
+    "zero": 0.0,
+    "dig": 0.33,
+    "json": 0.15,
+    "mark": 0.026,
+    "alpha": 0.268,
+    "nl": 0.0,
+    "flt": 2.5
+   },
+   "sizes": {
+    "none": 13076,
+    "logs": 12624,
+    "chat": 11951,
+    "emb": 13181,
+    "lp": 9436,
+    "text": 11917
+   },
+   "best": "lp"
+  },
+  {
+   "kind": "lp",
+   "name": "logprobs_03 4194304",
+   "n": 131072,
+   "sig": 16880,
+   "eyes": {
+    "hi": 0.001,
+    "zero": 0.0,
+    "dig": 0.335,
+    "json": 0.151,
+    "mark": 0.026,
+    "alpha": 0.262,
+    "nl": 0.0,
+    "flt": 2.9
+   },
+   "sizes": {
+    "none": 12907,
+    "logs": 12535,
+    "chat": 11891,
+    "emb": 12992,
+    "lp": 9403,
+    "text": 11888
+   },
+   "best": "lp"
+  },
+  {
+   "kind": "text",
+   "name": "enwik8 20M",
+   "n": 131072,
+   "sig": 11008,
+   "eyes": {
+    "hi": 0.0,
+    "zero": 0.0,
+    "dig": 0.047,
+    "json": 0.005,
+    "mark": 0.092,
+    "alpha": 0.638,
+    "nl": 19.7,
+    "flt": 0.0
+   },
+   "sizes": {
+    "none": 28588,
+    "logs": 27902,
+    "chat": 25626,
+    "emb": 28507,
+    "lp": 26697,
+    "text": 21783
+   },
+   "best": "text"
+  },
+  {
+   "kind": "text",
+   "name": "enwik8 30M",
+   "n": 131072,
+   "sig": 11776,
+   "eyes": {
+    "hi": 0.009,
+    "zero": 0.0,
+    "dig": 0.021,
+    "json": 0.006,
+    "mark": 0.052,
+    "alpha": 0.73,
+    "nl": 10.0,
+    "flt": 0.1
+   },
+   "sizes": {
+    "none": 35543,
+    "logs": 34940,
+    "chat": 31712,
+    "emb": 35374,
+    "lp": 33318,
+    "text": 27203
+   },
+   "best": "text"
+  },
+  {
+   "kind": "text",
+   "name": "enwik8 40M",
+   "n": 131072,
+   "sig": 11776,
+   "eyes": {
+    "hi": 0.008,
+    "zero": 0.0,
+    "dig": 0.017,
+    "json": 0.005,
+    "mark": 0.052,
+    "alpha": 0.713,
+    "nl": 13.8,
+    "flt": 0.0
+   },
+   "sizes": {
+    "none": 35943,
+    "logs": 35362,
+    "chat": 32189,
+    "emb": 36063,
+    "lp": 33865,
+    "text": 27651
+   },
+   "best": "text"
+  },
+  {
+   "kind": "text",
+   "name": "enwik8 60M",
+   "n": 131072,
+   "sig": 11776,
+   "eyes": {
+    "hi": 0.001,
+    "zero": 0.0,
+    "dig": 0.017,
+    "json": 0.003,
+    "mark": 0.053,
+    "alpha": 0.733,
+    "nl": 9.0,
+    "flt": 0.1
+   },
+   "sizes": {
+    "none": 36612,
+    "logs": 35946,
+    "chat": 32886,
+    "emb": 36607,
+    "lp": 34306,
+    "text": 28338
+   },
+   "best": "text"
+  },
+  {
+   "kind": "bin-dickens",
+   "name": "dickens a",
+   "n": 131072,
+   "sig": 15360,
+   "eyes": {
+    "hi": 0.0,
+    "zero": 0.0,
+    "dig": 0.002,
+    "json": 0.001,
+    "mark": 0.001,
+    "alpha": 0.746,
+    "nl": 20.7,
+    "flt": 0.1
+   },
+   "sizes": {
+    "none": 37222,
+    "logs": 36655,
+    "chat": 33539,
+    "emb": 36940,
+    "lp": 34930,
+    "text": 32486
+   },
+   "best": "text"
+  },
+  {
+   "kind": "bin-dickens",
+   "name": "dickens b",
+   "n": 131072,
+   "sig": 15360,
+   "eyes": {
+    "hi": 0.0,
+    "zero": 0.0,
+    "dig": 0.0,
+    "json": 0.001,
+    "mark": 0.0,
+    "alpha": 0.753,
+    "nl": 21.8,
+    "flt": 0.0
+   },
+   "sizes": {
+    "none": 37042,
+    "logs": 36538,
+    "chat": 33433,
+    "emb": 36723,
+    "lp": 34728,
+    "text": 32503
+   },
+   "best": "text"
+  },
+  {
+   "kind": "bin-mr",
+   "name": "mr a",
+   "n": 131072,
+   "sig": 12301,
+   "eyes": {
+    "hi": 0.026,
+    "zero": 0.6086,
+    "dig": 0.003,
+    "json": 0.001,
+    "mark": 0.002,
+    "alpha": 0.016,
+    "nl": 21.7,
+    "flt": 0.0
+   },
+   "sizes": {
+    "none": 29947,
+    "logs": 29897,
+    "chat": 29879,
+    "emb": 30010,
+    "lp": 30021,
+    "text": 29858
+   },
+   "best": "text"
+  },
+  {
+   "kind": "bin-mr",
+   "name": "mr b",
+   "n": 131072,
+   "sig": 8206,
+   "eyes": {
+    "hi": 0.128,
+    "zero": 0.4715,
+    "dig": 0.004,
+    "json": 0.004,
+    "mark": 0.002,
+    "alpha": 0.016,
+    "nl": 8.5,
+    "flt": 0.0
+   },
+   "sizes": {
+    "none": 34051,
+    "logs": 33984,
+    "chat": 33957,
+    "emb": 34076,
+    "lp": 34075,
+    "text": 33921
+   },
+   "best": "text"
+  },
+  {
+   "kind": "bin-ooffice",
+   "name": "ooffice a",
+   "n": 131072,
+   "sig": 267,
+   "eyes": {
+    "hi": 0.427,
+    "zero": 0.0807,
+    "dig": 0.021,
+    "json": 0.003,
+    "mark": 0.021,
+    "alpha": 0.202,
+    "nl": 1.9,
+    "flt": 0.0
+   },
+   "sizes": {
+    "none": 60017,
+    "logs": 60149,
+    "chat": 60435,
+    "emb": 59726,
+    "lp": 59619,
+    "text": 60287
+   },
+   "best": "lp"
+  },
+  {
+   "kind": "bin-ooffice",
+   "name": "ooffice b",
+   "n": 131072,
+   "sig": 271,
+   "eyes": {
+    "hi": 0.389,
+    "zero": 0.1381,
+    "dig": 0.013,
+    "json": 0.002,
+    "mark": 0.012,
+    "alpha": 0.183,
+    "nl": 1.2,
+    "flt": 0.0
+   },
+   "sizes": {
+    "none": 54476,
+    "logs": 54663,
+    "chat": 55074,
+    "emb": 54369,
+    "lp": 54143,
+    "text": 54855
+   },
+   "best": "lp"
+  },
+  {
+   "kind": "bin-reymont",
+   "name": "reymont a",
+   "n": 131072,
+   "sig": 4400,
+   "eyes": {
+    "hi": 0.0,
+    "zero": 0.0,
+    "dig": 0.345,
+    "json": 0.001,
+    "mark": 0.012,
+    "alpha": 0.246,
+    "nl": 2.3,
+    "flt": 0.4
+   },
+   "sizes": {
+    "none": 23425,
+    "logs": 23377,
+    "chat": 23259,
+    "emb": 23479,
+    "lp": 23183,
+    "text": 23149
+   },
+   "best": "text"
+  },
+  {
+   "kind": "bin-reymont",
+   "name": "reymont b",
+   "n": 131072,
+   "sig": 4400,
+   "eyes": {
+    "hi": 0.0,
+    "zero": 0.0,
+    "dig": 0.349,
+    "json": 0.001,
+    "mark": 0.012,
+    "alpha": 0.244,
+    "nl": 2.3,
+    "flt": 0.4
+   },
+   "sizes": {
+    "none": 23351,
+    "logs": 23335,
+    "chat": 23236,
+    "emb": 23443,
+    "lp": 23129,
+    "text": 23100
+   },
+   "best": "text"
+  },
+  {
+   "kind": "bin-sao",
+   "name": "sao a",
+   "n": 131072,
+   "sig": 4375,
+   "eyes": {
+    "hi": 0.418,
+    "zero": 0.0046,
+    "dig": 0.068,
+    "json": 0.006,
+    "mark": 0.012,
+    "alpha": 0.163,
+    "nl": 5.3,
+    "flt": 0.0
+   },
+   "sizes": {
+    "none": 75756,
+    "logs": 76148,
+    "chat": 76298,
+    "emb": 75983,
+    "lp": 82960,
+    "text": 76188
+   },
+   "best": "none"
+  },
+  {
+   "kind": "bin-sao",
+   "name": "sao b",
+   "n": 131072,
+   "sig": 283,
+   "eyes": {
+    "hi": 0.474,
+    "zero": 0.0187,
+    "dig": 0.088,
+    "json": 0.007,
+    "mark": 0.011,
+    "alpha": 0.172,
+    "nl": 1.8,
+    "flt": 0.0
+   },
+   "sizes": {
+    "none": 75601,
+    "logs": 75866,
+    "chat": 75975,
+    "emb": 75744,
+    "lp": 82481,
+    "text": 75887
+   },
+   "best": "none"
+  },
+  {
+   "kind": "bin-x-ray",
+   "name": "x-ray a",
+   "n": 131072,
+   "sig": 8198,
+   "eyes": {
+    "hi": 0.283,
+    "zero": 0.0032,
+    "dig": 0.018,
+    "json": 0.007,
+    "mark": 0.009,
+    "alpha": 0.063,
+    "nl": 8.7,
+    "flt": 0.0
+   },
+   "sizes": {
+    "none": 57111,
+    "logs": 57082,
+    "chat": 57084,
+    "emb": 57201,
+    "lp": 57308,
+    "text": 57036
+   },
+   "best": "text"
+  },
+  {
+   "kind": "bin-x-ray",
+   "name": "x-ray b",
+   "n": 131072,
+   "sig": 12550,
+   "eyes": {
+    "hi": 0.268,
+    "zero": 0.0028,
+    "dig": 0.015,
+    "json": 0.008,
+    "mark": 0.01,
+    "alpha": 0.087,
+    "nl": 37.8,
+    "flt": 0.0
+   },
+   "sizes": {
+    "none": 61250,
+    "logs": 61099,
+    "chat": 61100,
+    "emb": 61201,
+    "lp": 61384,
+    "text": 61048
+   },
+   "best": "text"
+  }
+ ],
+ "test": [
+  {
+   "kind": "logs",
+   "name": "Androi t",
+   "n": 131072,
+   "sig": 6496,
+   "eyes": {
+    "hi": 0.0,
+    "zero": 0.0,
+    "dig": 0.206,
+    "json": 0.03,
+    "mark": 0.019,
+    "alpha": 0.593,
+    "nl": 7.4,
+    "flt": 0.9
+   },
+   "sizes": {
+    "none": 6509,
+    "logs": 3536,
+    "chat": 5790,
+    "emb": 6540,
+    "lp": 6104,
+    "text": 5753
+   },
+   "best": "logs"
+  },
+  {
+   "kind": "logs",
+   "name": "Apach t",
+   "n": 85358,
+   "sig": 10848,
+   "eyes": {
+    "hi": 0.0,
+    "zero": 0.0,
+    "dig": 0.18,
+    "json": 0.024,
+    "mark": 0.047,
+    "alpha": 0.548,
+    "nl": 12.0,
+    "flt": 0.0
+   },
+   "sizes": {
+    "none": 1900,
+    "logs": 1495,
+    "chat": 1742,
+    "emb": 1927,
+    "lp": 1830,
+    "text": 1737
+   },
+   "best": "logs"
+  },
+  {
+   "kind": "logs",
+   "name": "BG t",
+   "n": 131072,
+   "sig": 21552,
+   "eyes": {
+    "hi": 0.0,
+    "zero": 0.0,
+    "dig": 0.369,
+    "json": 0.015,
+    "mark": 0.001,
+    "alpha": 0.394,
+    "nl": 6.4,
+    "flt": 2.2
+   },
+   "sizes": {
+    "none": 12742,
+    "logs": 11415,
+    "chat": 12088,
+    "emb": 12810,
+    "lp": 12310,
+    "text": 12062
+   },
+   "best": "logs"
+  },
+  {
+   "kind": "logs",
+   "name": "HDF t",
+   "n": 131072,
+   "sig": 21552,
+   "eyes": {
+    "hi": 0.0,
+    "zero": 0.0,
+    "dig": 0.375,
+    "json": 0.018,
+    "mark": 0.0,
+    "alpha": 0.451,
+    "nl": 7.2,
+    "flt": 8.1
+   },
+   "sizes": {
+    "none": 15325,
+    "logs": 14223,
+    "chat": 15092,
+    "emb": 15434,
+    "lp": 15148,
+    "text": 15109
+   },
+   "best": "logs"
+  },
+  {
+   "kind": "logs",
+   "name": "HP t",
+   "n": 80394,
+   "sig": 10272,
+   "eyes": {
+    "hi": 0.0,
+    "zero": 0.0,
+    "dig": 0.271,
+    "json": 0.0,
+    "mark": 0.003,
+    "alpha": 0.578,
+    "nl": 14.0,
+    "flt": 0.0
+   },
+   "sizes": {
+    "none": 5965,
+    "logs": 5611,
+    "chat": 5746,
+    "emb": 5991,
+    "lp": 5826,
+    "text": 5767
+   },
+   "best": "logs"
+  },
+  {
+   "kind": "logs",
+   "name": "Hadoo t",
+   "n": 131072,
+   "sig": 22880,
+   "eyes": {
+    "hi": 0.0,
+    "zero": 0.0,
+    "dig": 0.187,
+    "json": 0.031,
+    "mark": 0.014,
+    "alpha": 0.601,
+    "nl": 5.2,
+    "flt": 4.8
+   },
+   "sizes": {
+    "none": 2306,
+    "logs": 1382,
+    "chat": 1934,
+    "emb": 2403,
+    "lp": 2130,
+    "text": 1915
+   },
+   "best": "logs"
+  },
+  {
+   "kind": "logs",
+   "name": "HealthAp t",
+   "n": 93957,
+   "sig": 9840,
+   "eyes": {
+    "hi": 0.0,
+    "zero": 0.0,
+    "dig": 0.41,
+    "json": 0.036,
+    "mark": 0.037,
+    "alpha": 0.424,
+    "nl": 10.9,
+    "flt": 0.0
+   },
+   "sizes": {
+    "none": 3662,
+    "logs": 3007,
+    "chat": 3388,
+    "emb": 3735,
+    "lp": 3520,
+    "text": 3379
+   },
+   "best": "logs"
+  },
+  {
+   "kind": "logs",
+   "name": "Linu t",
+   "n": 108844,
+   "sig": 26208,
+   "eyes": {
+    "hi": 0.0,
+    "zero": 0.0,
+    "dig": 0.271,
+    "json": 0.035,
+    "mark": 0.033,
+    "alpha": 0.462,
+    "nl": 8.5,
+    "flt": 3.0
+   },
+   "sizes": {
+    "none": 4521,
+    "logs": 3555,
+    "chat": 3928,
+    "emb": 4598,
+    "lp": 4155,
+    "text": 3854
+   },
+   "best": "logs"
+  },
+  {
+   "kind": "logs",
+   "name": "Ma t",
+   "n": 131072,
+   "sig": 6496,
+   "eyes": {
+    "hi": 0.0,
+    "zero": 0.0,
+    "dig": 0.188,
+    "json": 0.032,
+    "mark": 0.02,
+    "alpha": 0.594,
+    "nl": 6.4,
+    "flt": 0.4
+   },
+   "sizes": {
+    "none": 15054,
+    "logs": 9588,
+    "chat": 13507,
+    "emb": 14926,
+    "lp": 14162,
+    "text": 13481
+   },
+   "best": "logs"
+  },
+  {
+   "kind": "logs",
+   "name": "OpenSS t",
+   "n": 113415,
+   "sig": 27232,
+   "eyes": {
+    "hi": 0.0,
+    "zero": 0.0,
+    "dig": 0.235,
+    "json": 0.038,
+    "mark": 0.043,
+    "alpha": 0.513,
+    "nl": 9.0,
+    "flt": 8.5
+   },
+   "sizes": {
+    "none": 2286,
+    "logs": 1604,
+    "chat": 2076,
+    "emb": 2351,
+    "lp": 2346,
+    "text": 2074
+   },
+   "best": "logs"
+  },
+  {
+   "kind": "logs",
+   "name": "OpenStac t",
+   "n": 131072,
+   "sig": 21616,
+   "eyes": {
+    "hi": 0.0,
+    "zero": 0.0,
+    "dig": 0.371,
+    "json": 0.024,
+    "mark": 0.009,
+    "alpha": 0.421,
+    "nl": 3.4,
+    "flt": 6.3
+   },
+   "sizes": {
+    "none": 8659,
+    "logs": 6496,
+    "chat": 8048,
+    "emb": 8798,
+    "lp": 8304,
+    "text": 8094
+   },
+   "best": "logs"
+  },
+  {
+   "kind": "logs",
+   "name": "Proxifie t",
+   "n": 120067,
+   "sig": 10592,
+   "eyes": {
+    "hi": 0.0,
+    "zero": 0.0,
+    "dig": 0.198,
+    "json": 0.034,
+    "mark": 0.017,
+    "alpha": 0.536,
+    "nl": 8.7,
+    "flt": 0.2
+   },
+   "sizes": {
+    "none": 7042,
+    "logs": 6206,
+    "chat": 6612,
+    "emb": 7149,
+    "lp": 6737,
+    "text": 6616
+   },
+   "best": "logs"
+  },
+  {
+   "kind": "logs",
+   "name": "Spar t",
+   "n": 97916,
+   "sig": 26720,
+   "eyes": {
+    "hi": 0.0,
+    "zero": 0.0,
+    "dig": 0.221,
+    "json": 0.035,
+    "mark": 0.008,
+    "alpha": 0.527,
+    "nl": 10.2,
+    "flt": 2.2
+   },
+   "sizes": {
+    "none": 2914,
+    "logs": 2124,
+    "chat": 2672,
+    "emb": 3034,
+    "lp": 2787,
+    "text": 2651
+   },
+   "best": "logs"
+  },
+  {
+   "kind": "logs",
+   "name": "Thunderbir t",
+   "n": 131072,
+   "sig": 21872,
+   "eyes": {
+    "hi": 0.0,
+    "zero": 0.0,
+    "dig": 0.305,
+    "json": 0.021,
+    "mark": 0.013,
+    "alpha": 0.459,
+    "nl": 6.3,
+    "flt": 4.2
+   },
+   "sizes": {
+    "none": 6831,
+    "logs": 5264,
+    "chat": 6226,
+    "emb": 7064,
+    "lp": 7184,
+    "text": 6065
+   },
+   "best": "logs"
+  },
+  {
+   "kind": "logs",
+   "name": "Window t",
+   "n": 131072,
+   "sig": 9568,
+   "eyes": {
+    "hi": 0.0,
+    "zero": 0.0,
+    "dig": 0.175,
+    "json": 0.021,
+    "mark": 0.012,
+    "alpha": 0.48,
+    "nl": 8.1,
+    "flt": 0.0
+   },
+   "sizes": {
+    "none": 3029,
+    "logs": 2190,
+    "chat": 2759,
+    "emb": 3180,
+    "lp": 2891,
+    "text": 2769
+   },
+   "best": "logs"
+  },
+  {
+   "kind": "logs",
+   "name": "Zookeepe t",
+   "n": 131072,
+   "sig": 39264,
+   "eyes": {
+    "hi": 0.0,
+    "zero": 0.0,
+    "dig": 0.267,
+    "json": 0.033,
+    "mark": 0.016,
+    "alpha": 0.507,
+    "nl": 7.1,
+    "flt": 13.7
+   },
+   "sizes": {
+    "none": 5195,
+    "logs": 4193,
+    "chat": 4734,
+    "emb": 5313,
+    "lp": 4913,
+    "text": 4761
+   },
+   "best": "logs"
+  },
+  {
+   "kind": "chat",
+   "name": "wildchat_00 0",
+   "n": 131072,
+   "sig": 18593,
+   "eyes": {
+    "hi": 0.061,
+    "zero": 0.0,
+    "dig": 0.179,
+    "json": 0.072,
+    "mark": 0.002,
+    "alpha": 0.529,
+    "nl": 0.1,
+    "flt": 5.2
+   },
+   "sizes": {
+    "none": 22367,
+    "logs": 21603,
+    "chat": 17704,
+    "emb": 22252,
+    "lp": 20750,
+    "text": 19579
+   },
+   "best": "chat"
+  },
+  {
+   "kind": "chat",
+   "name": "wildchat_00 3145728",
+   "n": 131072,
+   "sig": 18576,
+   "eyes": {
+    "hi": 0.002,
+    "zero": 0.0,
+    "dig": 0.14,
+    "json": 0.061,
+    "mark": 0.001,
+    "alpha": 0.624,
+    "nl": 0.0,
+    "flt": 2.6
+   },
+   "sizes": {
+    "none": 21587,
+    "logs": 20758,
+    "chat": 16803,
+    "emb": 21505,
+    "lp": 19981,
+    "text": 18481
+   },
+   "best": "chat"
+  },
+  {
+   "kind": "chat",
+   "name": "wildchat_01 0",
+   "n": 131072,
+   "sig": 18577,
+   "eyes": {
+    "hi": 0.049,
+    "zero": 0.0,
+    "dig": 0.147,
+    "json": 0.075,
+    "mark": 0.004,
+    "alpha": 0.532,
+    "nl": 0.1,
+    "flt": 3.7
+   },
+   "sizes": {
+    "none": 20080,
+    "logs": 19445,
+    "chat": 15820,
+    "emb": 20130,
+    "lp": 18872,
+    "text": 17929
+   },
+   "best": "chat"
+  },
+  {
+   "kind": "chat",
+   "name": "wildchat_01 3145728",
+   "n": 131072,
+   "sig": 17569,
+   "eyes": {
+    "hi": 0.043,
+    "zero": 0.0,
+    "dig": 0.22,
+    "json": 0.083,
+    "mark": 0.002,
+    "alpha": 0.492,
+    "nl": 0.1,
+    "flt": 6.9
+   },
+   "sizes": {
+    "none": 20381,
+    "logs": 19759,
+    "chat": 16491,
+    "emb": 20317,
+    "lp": 19265,
+    "text": 18492
+   },
+   "best": "chat"
+  },
+  {
+   "kind": "chat",
+   "name": "wildchat_02 0",
+   "n": 131072,
+   "sig": 18848,
+   "eyes": {
+    "hi": 0.0,
+    "zero": 0.0,
+    "dig": 0.164,
+    "json": 0.064,
+    "mark": 0.01,
+    "alpha": 0.582,
+    "nl": 0.0,
+    "flt": 3.0
+   },
+   "sizes": {
+    "none": 19179,
+    "logs": 18544,
+    "chat": 15237,
+    "emb": 19186,
+    "lp": 18134,
+    "text": 17232
+   },
+   "best": "chat"
+  },
+  {
+   "kind": "chat",
+   "name": "wildchat_02 3145728",
+   "n": 131072,
+   "sig": 17569,
+   "eyes": {
+    "hi": 0.098,
+    "zero": 0.0,
+    "dig": 0.222,
+    "json": 0.079,
+    "mark": 0.009,
+    "alpha": 0.433,
+    "nl": 0.0,
+    "flt": 5.0
+   },
+   "sizes": {
+    "none": 23154,
+    "logs": 22412,
+    "chat": 18001,
+    "emb": 23073,
+    "lp": 21567,
+    "text": 20213
+   },
+   "best": "chat"
+  },
+  {
+   "kind": "emb",
+   "name": "embeddings_00",
+   "n": 131072,
+   "sig": 32816,
+   "eyes": {
+    "hi": 0.0,
+    "zero": 0.0,
+    "dig": 0.838,
+    "json": 0.002,
+    "mark": 0.0,
+    "alpha": 0.005,
+    "nl": 0.0,
+    "flt": 44.4
+   },
+   "sizes": {
+    "none": 43291,
+    "logs": 43237,
+    "chat": 43056,
+    "emb": 42492,
+    "lp": 43984,
+    "text": 43260
+   },
+   "best": "emb"
+  },
+  {
+   "kind": "emb",
+   "name": "embeddings_01",
+   "n": 131072,
+   "sig": 32816,
+   "eyes": {
+    "hi": 0.0,
+    "zero": 0.0,
+    "dig": 0.838,
+    "json": 0.002,
+    "mark": 0.0,
+    "alpha": 0.004,
+    "nl": 0.0,
+    "flt": 44.5
+   },
+   "sizes": {
+    "none": 43165,
+    "logs": 43120,
+    "chat": 42942,
+    "emb": 42380,
+    "lp": 43971,
+    "text": 43141
+   },
+   "best": "emb"
+  },
+  {
+   "kind": "lp",
+   "name": "logprobs_00",
+   "n": 131072,
+   "sig": 16880,
+   "eyes": {
+    "hi": 0.0,
+    "zero": 0.0,
+    "dig": 0.329,
+    "json": 0.154,
+    "mark": 0.027,
+    "alpha": 0.265,
+    "nl": 0.0,
+    "flt": 2.7
+   },
+   "sizes": {
+    "none": 13023,
+    "logs": 12607,
+    "chat": 11990,
+    "emb": 13124,
+    "lp": 9485,
+    "text": 11978
+   },
+   "best": "lp"
+  },
+  {
+   "kind": "lp",
+   "name": "logprobs_01",
+   "n": 131072,
+   "sig": 16880,
+   "eyes": {
+    "hi": 0.0,
+    "zero": 0.0,
+    "dig": 0.332,
+    "json": 0.15,
+    "mark": 0.026,
+    "alpha": 0.265,
+    "nl": 0.0,
+    "flt": 2.6
+   },
+   "sizes": {
+    "none": 12866,
+    "logs": 12414,
+    "chat": 11844,
+    "emb": 12932,
+    "lp": 9456,
+    "text": 11840
+   },
+   "best": "lp"
+  },
+  {
+   "kind": "text",
+   "name": "enwik9 200M",
+   "n": 131072,
+   "sig": 12032,
+   "eyes": {
+    "hi": 0.003,
+    "zero": 0.0,
+    "dig": 0.025,
+    "json": 0.004,
+    "mark": 0.073,
+    "alpha": 0.71,
+    "nl": 11.0,
+    "flt": 0.1
+   },
+   "sizes": {
+    "none": 34606,
+    "logs": 33979,
+    "chat": 31045,
+    "emb": 34630,
+    "lp": 32533,
+    "text": 26146
+   },
+   "best": "text"
+  },
+  {
+   "kind": "text",
+   "name": "enwik9 400M",
+   "n": 131072,
+   "sig": 11009,
+   "eyes": {
+    "hi": 0.01,
+    "zero": 0.0,
+    "dig": 0.032,
+    "json": 0.008,
+    "mark": 0.064,
+    "alpha": 0.692,
+    "nl": 14.9,
+    "flt": 0.1
+   },
+   "sizes": {
+    "none": 36446,
+    "logs": 35825,
+    "chat": 32839,
+    "emb": 36525,
+    "lp": 34325,
+    "text": 27703
+   },
+   "best": "text"
+  },
+  {
+   "kind": "text",
+   "name": "enwik9 600M",
+   "n": 131072,
+   "sig": 11008,
+   "eyes": {
+    "hi": 0.003,
+    "zero": 0.0,
+    "dig": 0.037,
+    "json": 0.008,
+    "mark": 0.063,
+    "alpha": 0.675,
+    "nl": 16.4,
+    "flt": 0.2
+   },
+   "sizes": {
+    "none": 30197,
+    "logs": 29483,
+    "chat": 26839,
+    "emb": 30297,
+    "lp": 28334,
+    "text": 22768
+   },
+   "best": "text"
+  },
+  {
+   "kind": "text",
+   "name": "enwik9 800M",
+   "n": 131072,
+   "sig": 11776,
+   "eyes": {
+    "hi": 0.003,
+    "zero": 0.0,
+    "dig": 0.018,
+    "json": 0.006,
+    "mark": 0.048,
+    "alpha": 0.704,
+    "nl": 13.5,
+    "flt": 0.0
+   },
+   "sizes": {
+    "none": 33966,
+    "logs": 33425,
+    "chat": 30369,
+    "emb": 34011,
+    "lp": 31774,
+    "text": 26277
+   },
+   "best": "text"
+  },
+  {
+   "kind": "bin-mozilla",
+   "name": "mozilla a",
+   "n": 131072,
+   "sig": 4687,
+   "eyes": {
+    "hi": 0.325,
+    "zero": 0.1561,
+    "dig": 0.035,
+    "json": 0.034,
+    "mark": 0.032,
+    "alpha": 0.119,
+    "nl": 2.2,
+    "flt": 0.0
+   },
+   "sizes": {
+    "none": 44270,
+    "logs": 44476,
+    "chat": 44836,
+    "emb": 44186,
+    "lp": 44185,
+    "text": 44675
+   },
+   "best": "lp"
+  },
+  {
+   "kind": "bin-mozilla",
+   "name": "mozilla b",
+   "n": 131072,
+   "sig": 335,
+   "eyes": {
+    "hi": 0.308,
+    "zero": 0.2293,
+    "dig": 0.019,
+    "json": 0.033,
+    "mark": 0.026,
+    "alpha": 0.139,
+    "nl": 1.5,
+    "flt": 0.0
+   },
+   "sizes": {
+    "none": 25210,
+    "logs": 25584,
+    "chat": 25825,
+    "emb": 25433,
+    "lp": 26838,
+    "text": 25725
+   },
+   "best": "none"
+  },
+  {
+   "kind": "bin-nci",
+   "name": "nci a",
+   "n": 131072,
+   "sig": 45104,
+   "eyes": {
+    "hi": 0.0,
+    "zero": 0.0,
+    "dig": 0.382,
+    "json": 0.0,
+    "mark": 0.005,
+    "alpha": 0.027,
+    "nl": 26.0,
+    "flt": 15.0
+   },
+   "sizes": {
+    "none": 7253,
+    "logs": 7019,
+    "chat": 7023,
+    "emb": 7462,
+    "lp": 7165,
+    "text": 7099
+   },
+   "best": "logs"
+  },
+  {
+   "kind": "bin-nci",
+   "name": "nci b",
+   "n": 131072,
+   "sig": 45104,
+   "eyes": {
+    "hi": 0.0,
+    "zero": 0.0,
+    "dig": 0.382,
+    "json": 0.0,
+    "mark": 0.005,
+    "alpha": 0.027,
+    "nl": 25.8,
+    "flt": 12.8
+   },
+   "sizes": {
+    "none": 4401,
+    "logs": 4208,
+    "chat": 4247,
+    "emb": 4623,
+    "lp": 4377,
+    "text": 4264
+   },
+   "best": "logs"
+  },
+  {
+   "kind": "bin-osdb",
+   "name": "osdb a",
+   "n": 131072,
+   "sig": 21545,
+   "eyes": {
+    "hi": 0.073,
+    "zero": 0.0678,
+    "dig": 0.259,
+    "json": 0.011,
+    "mark": 0.003,
+    "alpha": 0.439,
+    "nl": 2.7,
+    "flt": 1.0
+   },
+   "sizes": {
+    "none": 40869,
+    "logs": 40735,
+    "chat": 40764,
+    "emb": 40471,
+    "lp": 39892,
+    "text": 40744
+   },
+   "best": "lp"
+  },
+  {
+   "kind": "bin-osdb",
+   "name": "osdb b",
+   "n": 131072,
+   "sig": 21545,
+   "eyes": {
+    "hi": 0.072,
+    "zero": 0.0659,
+    "dig": 0.257,
+    "json": 0.01,
+    "mark": 0.003,
+    "alpha": 0.449,
+    "nl": 2.9,
+    "flt": 1.1
+   },
+   "sizes": {
+    "none": 40437,
+    "logs": 40302,
+    "chat": 40337,
+    "emb": 40056,
+    "lp": 39492,
+    "text": 40300
+   },
+   "best": "lp"
+  },
+  {
+   "kind": "bin-samba",
+   "name": "samba a",
+   "n": 131072,
+   "sig": 11080,
+   "eyes": {
+    "hi": 0.0,
+    "zero": 0.0365,
+    "dig": 0.027,
+    "json": 0.04,
+    "mark": 0.079,
+    "alpha": 0.664,
+    "nl": 14.6,
+    "flt": 0.2
+   },
+   "sizes": {
+    "none": 18815,
+    "logs": 17913,
+    "chat": 16307,
+    "emb": 18740,
+    "lp": 17389,
+    "text": 15815
+   },
+   "best": "text"
+  },
+  {
+   "kind": "bin-samba",
+   "name": "samba b",
+   "n": 131072,
+   "sig": 12468,
+   "eyes": {
+    "hi": 0.0,
+    "zero": 0.0084,
+    "dig": 0.402,
+    "json": 0.098,
+    "mark": 0.0,
+    "alpha": 0.288,
+    "nl": 50.2,
+    "flt": 0.0
+   },
+   "sizes": {
+    "none": 9351,
+    "logs": 8599,
+    "chat": 8267,
+    "emb": 9446,
+    "lp": 9555,
+    "text": 8047
+   },
+   "best": "text"
+  },
+  {
+   "kind": "bin-webster",
+   "name": "webster a",
+   "n": 131072,
+   "sig": 15104,
+   "eyes": {
+    "hi": 0.0,
+    "zero": 0.0,
+    "dig": 0.003,
+    "json": 0.003,
+    "mark": 0.153,
+    "alpha": 0.617,
+    "nl": 25.9,
+    "flt": 0.0
+   },
+   "sizes": {
+    "none": 25188,
+    "logs": 24791,
+    "chat": 22691,
+    "emb": 25154,
+    "lp": 23506,
+    "text": 21475
+   },
+   "best": "text"
+  },
+  {
+   "kind": "bin-webster",
+   "name": "webster b",
+   "n": 131072,
+   "sig": 15104,
+   "eyes": {
+    "hi": 0.0,
+    "zero": 0.0,
+    "dig": 0.002,
+    "json": 0.004,
+    "mark": 0.156,
+    "alpha": 0.599,
+    "nl": 23.1,
+    "flt": 0.0
+   },
+   "sizes": {
+    "none": 27283,
+    "logs": 26948,
+    "chat": 24922,
+    "emb": 27349,
+    "lp": 25740,
+    "text": 23687
+   },
+   "best": "text"
+  },
+  {
+   "kind": "bin-xml",
+   "name": "xml a",
+   "n": 131072,
+   "sig": 16128,
+   "eyes": {
+    "hi": 0.0,
+    "zero": 0.0,
+    "dig": 0.0,
+    "json": 0.001,
+    "mark": 0.094,
+    "alpha": 0.723,
+    "nl": 35.3,
+    "flt": 0.0
+   },
+   "sizes": {
+    "none": 24101,
+    "logs": 23825,
+    "chat": 22076,
+    "emb": 24079,
+    "lp": 22699,
+    "text": 21500
+   },
+   "best": "text"
+  },
+  {
+   "kind": "bin-xml",
+   "name": "xml b",
+   "n": 131072,
+   "sig": 2880,
+   "eyes": {
+    "hi": 0.0,
+    "zero": 0.0,
+    "dig": 0.017,
+    "json": 0.027,
+    "mark": 0.264,
+    "alpha": 0.6,
+    "nl": 0.0,
+    "flt": 0.0
+   },
+   "sizes": {
+    "none": 3395,
+    "logs": 3127,
+    "chat": 3117,
+    "emb": 3496,
+    "lp": 3291,
+    "text": 3082
+   },
+   "best": "text"
+  }
+ ],
+ "classes": [
+  "none",
+  "logs",
+  "chat",
+  "emb",
+  "lp",
+  "text"
+ ]
+}

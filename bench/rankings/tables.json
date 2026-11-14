@@ -1,0 +1,28 @@
+{
+ "rows": [
+  {
+   "benchmark": "Large Text Compression Benchmark",
+   "short": "LTCB (enwik9)",
+   "url": "https://mattmahoney.net/dc/text.html",
+   "corpus": "enwik9: the first 10^9 bytes of an English Wikipedia dump",
+   "measure": "compressed enwik9 plus the zipped decompressor",
+   "programs_listed": 233,
+   "fluid_total": 132672138,
+   "fluid_rank": 31,
+   "ranked_with_fluid": 234,
+   "saved": "13 Nov 2026"
+  },
+  {
+   "benchmark": "Silesia Open Source Compression Benchmark",
+   "short": "Silesia",
+   "url": "https://mattmahoney.net/dc/silesia.html",
+   "corpus": "the Silesia corpus: 12 files, 211,938,580 bytes of mixed data",
+   "measure": "total compressed size of the 12 files",
+   "programs_listed": 323,
+   "fluid_total": 38820251,
+   "fluid_rank": 60,
+   "ranked_with_fluid": 324,
+   "saved": "13 Nov 2026"
+  }
+ ]
+}

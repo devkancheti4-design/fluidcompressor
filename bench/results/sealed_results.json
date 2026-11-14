@@ -1,0 +1,952 @@
+[
+ {
+  "kind": "text",
+  "name": "enwik9 150M 64K",
+  "n": 65536,
+  "sizes": {
+   "fluid": 14265,
+   "shz_cold": 20331,
+   "gzip": 26466,
+   "bzip2": 23616,
+   "xz": 24392,
+   "zstd": 25140,
+   "brotli": 21190,
+   "bsc": 22514,
+   "zstd_dict": 21988
+  },
+  "ok": true,
+  "info": {
+   "sig": 11776,
+   "cls": "text",
+   "act": "R",
+   "how": "route"
+  },
+  "tc": 7.1,
+  "td": 6.4
+ },
+ {
+  "kind": "text",
+  "name": "enwik9 350M 256K",
+  "n": 262144,
+  "sizes": {
+   "fluid": 54101,
+   "shz_cold": 65985,
+   "gzip": 95734,
+   "bzip2": 81145,
+   "xz": 82708,
+   "zstd": 86099,
+   "brotli": 76741,
+   "bsc": 76066,
+   "zstd_dict": 82169
+  },
+  "ok": true,
+  "info": {
+   "sig": 11776,
+   "cls": "text",
+   "act": "R",
+   "how": "route"
+  },
+  "tc": 8.0,
+  "td": 8.0
+ },
+ {
+  "kind": "text",
+  "name": "enwik9 550M 1024K",
+  "n": 1048576,
+  "sizes": {
+   "fluid": 75602,
+   "shz_cold": 85966,
+   "gzip": 171182,
+   "bzip2": 120504,
+   "xz": 123320,
+   "zstd": 135262,
+   "brotli": 118008,
+   "bsc": 107154,
+   "zstd_dict": 135883
+  },
+  "ok": true,
+  "info": {
+   "sig": 27152,
+   "cls": "text",
+   "act": "B",
+   "how": "measured"
+  },
+  "tc": 76.0,
+  "td": 15.0
+ },
+ {
+  "kind": "text",
+  "name": "enwik9 950M 64K",
+  "n": 65536,
+  "sizes": {
+   "fluid": 13994,
+   "shz_cold": 19711,
+   "gzip": 25390,
+   "bzip2": 22998,
+   "xz": 23536,
+   "zstd": 24219,
+   "brotli": 20317,
+   "bsc": 21920,
+   "zstd_dict": 21244
+  },
+  "ok": true,
+  "info": {
+   "sig": 11776,
+   "cls": "text",
+   "act": "R",
+   "how": "route"
+  },
+  "tc": 7.2,
+  "td": 7.0
+ },
+ {
+  "kind": "records",
+  "name": "Android csv",
+  "n": 300000,
+  "sizes": {
+   "fluid": 6007,
+   "shz_cold": 9922,
+   "gzip": 24944,
+   "bzip2": 17524,
+   "xz": 16140,
+   "zstd": 17153,
+   "brotli": 15666,
+   "bsc": 16576,
+   "zstd_dict": 15960
+  },
+  "ok": true,
+  "info": {
+   "sig": 23136,
+   "cls": "logs",
+   "act": "B",
+   "how": "measured"
+  },
+  "tc": 53.5,
+  "td": 5.6
+ },
+ {
+  "kind": "records",
+  "name": "Apache csv",
+  "n": 258805,
+  "sizes": {
+   "fluid": 3184,
+   "shz_cold": 3776,
+   "gzip": 14435,
+   "bzip2": 10736,
+   "xz": 9540,
+   "zstd": 11017,
+   "brotli": 9925,
+   "bsc": 10062,
+   "zstd_dict": 10543
+  },
+  "ok": true,
+  "info": {
+   "sig": 6432,
+   "cls": "logs",
+   "act": "B",
+   "how": "measured"
+  },
+  "tc": 49.7,
+  "td": 5.2
+ },
+ {
+  "kind": "records",
+  "name": "BGL csv",
+  "n": 300000,
+  "sizes": {
+   "fluid": 17630,
+   "shz_cold": 21314,
+   "gzip": 50274,
+   "bzip2": 39551,
+   "xz": 33616,
+   "zstd": 37785,
+   "brotli": 34473,
+   "bsc": 35640,
+   "zstd_dict": 36817
+  },
+  "ok": true,
+  "info": {
+   "sig": 21552,
+   "cls": "logs",
+   "act": "B",
+   "how": "route"
+  },
+  "tc": 6.0,
+  "td": 5.3
+ },
+ {
+  "kind": "records",
+  "name": "HDFS csv",
+  "n": 300000,
+  "sizes": {
+   "fluid": 16885,
+   "shz_cold": 22276,
+   "gzip": 44344,
+   "bzip2": 33307,
+   "xz": 33200,
+   "zstd": 34164,
+   "brotli": 32206,
+   "bsc": 31716,
+   "zstd_dict": 32894
+  },
+  "ok": true,
+  "info": {
+   "sig": 22048,
+   "cls": "logs",
+   "act": "B",
+   "how": "measured"
+  },
+  "tc": 55.0,
+  "td": 5.5
+ },
+ {
+  "kind": "records",
+  "name": "HPC csv",
+  "n": 217818,
+  "sizes": {
+   "fluid": 11885,
+   "shz_cold": 13652,
+   "gzip": 31353,
+   "bzip2": 26328,
+   "xz": 22264,
+   "zstd": 23609,
+   "brotli": 22212,
+   "bsc": 24856,
+   "zstd_dict": 23129
+  },
+  "ok": true,
+  "info": {
+   "sig": 10528,
+   "cls": "logs",
+   "act": "B",
+   "how": "measured"
+  },
+  "tc": 47.3,
+  "td": 5.6
+ },
+ {
+  "kind": "records",
+  "name": "Hadoop csv",
+  "n": 300000,
+  "sizes": {
+   "fluid": 5363,
+   "shz_cold": 8286,
+   "gzip": 19803,
+   "bzip2": 14883,
+   "xz": 13016,
+   "zstd": 14152,
+   "brotli": 12668,
+   "bsc": 13638,
+   "zstd_dict": 13129
+  },
+  "ok": true,
+  "info": {
+   "sig": 6480,
+   "cls": "logs",
+   "act": "B",
+   "how": "measured"
+  },
+  "tc": 53.1,
+  "td": 8.5
+ },
+ {
+  "kind": "records",
+  "name": "HealthApp csv",
+  "n": 283128,
+  "sizes": {
+   "fluid": 6668,
+   "shz_cold": 7930,
+   "gzip": 24618,
+   "bzip2": 19402,
+   "xz": 16344,
+   "zstd": 18226,
+   "brotli": 16443,
+   "bsc": 17796,
+   "zstd_dict": 17996
+  },
+  "ok": true,
+  "info": {
+   "sig": 5744,
+   "cls": "logs",
+   "act": "B",
+   "how": "measured"
+  },
+  "tc": 91.3,
+  "td": 21.9
+ },
+ {
+  "kind": "records",
+  "name": "Linux csv",
+  "n": 300000,
+  "sizes": {
+   "fluid": 4710,
+   "shz_cold": 5937,
+   "gzip": 17549,
+   "bzip2": 15354,
+   "xz": 10120,
+   "zstd": 12002,
+   "brotli": 10914,
+   "bsc": 13292,
+   "zstd_dict": 11427
+  },
+  "ok": true,
+  "info": {
+   "sig": 23072,
+   "cls": "logs",
+   "act": "B",
+   "how": "measured"
+  },
+  "tc": 105.3,
+  "td": 22.2
+ },
+ {
+  "kind": "records",
+  "name": "Mac csv",
+  "n": 300000,
+  "sizes": {
+   "fluid": 11702,
+   "shz_cold": 19240,
+   "gzip": 45243,
+   "bzip2": 30976,
+   "xz": 26700,
+   "zstd": 28907,
+   "brotli": 26050,
+   "bsc": 28566,
+   "zstd_dict": 25620
+  },
+  "ok": true,
+  "info": {
+   "sig": 6480,
+   "cls": "logs",
+   "act": "B",
+   "how": "measured"
+  },
+  "tc": 200.1,
+  "td": 25.9
+ },
+ {
+  "kind": "records",
+  "name": "OpenSSH csv",
+  "n": 300000,
+  "sizes": {
+   "fluid": 4103,
+   "shz_cold": 5447,
+   "gzip": 18252,
+   "bzip2": 14340,
+   "xz": 11416,
+   "zstd": 13173,
+   "brotli": 11620,
+   "bsc": 12670,
+   "zstd_dict": 12948
+  },
+  "ok": true,
+  "info": {
+   "sig": 23136,
+   "cls": "logs",
+   "act": "B",
+   "how": "measured"
+  },
+  "tc": 222.3,
+  "td": 7.9
+ },
+ {
+  "kind": "records",
+  "name": "OpenStack csv",
+  "n": 300000,
+  "sizes": {
+   "fluid": 8473,
+   "shz_cold": 15045,
+   "gzip": 29513,
+   "bzip2": 22898,
+   "xz": 19560,
+   "zstd": 20550,
+   "brotli": 19476,
+   "bsc": 20802,
+   "zstd_dict": 19141
+  },
+  "ok": true,
+  "info": {
+   "sig": 21872,
+   "cls": "logs",
+   "act": "B",
+   "how": "measured"
+  },
+  "tc": 176.8,
+  "td": 6.9
+ },
+ {
+  "kind": "records",
+  "name": "Proxifier csv",
+  "n": 300000,
+  "sizes": {
+   "fluid": 7785,
+   "shz_cold": 9566,
+   "gzip": 23468,
+   "bzip2": 16784,
+   "xz": 17532,
+   "zstd": 19320,
+   "brotli": 17689,
+   "bsc": 16322,
+   "zstd_dict": 18816
+  },
+  "ok": true,
+  "info": {
+   "sig": 23120,
+   "cls": "logs",
+   "act": "B",
+   "how": "measured"
+  },
+  "tc": 162.6,
+  "td": 6.8
+ },
+ {
+  "kind": "records",
+  "name": "Spark csv",
+  "n": 300000,
+  "sizes": {
+   "fluid": 4441,
+   "shz_cold": 6135,
+   "gzip": 19459,
+   "bzip2": 14819,
+   "xz": 12564,
+   "zstd": 13852,
+   "brotli": 12950,
+   "bsc": 13364,
+   "zstd_dict": 12913
+  },
+  "ok": true,
+  "info": {
+   "sig": 23120,
+   "cls": "logs",
+   "act": "B",
+   "how": "measured"
+  },
+  "tc": 74.3,
+  "td": 4.6
+ },
+ {
+  "kind": "records",
+  "name": "Thunderbird csv",
+  "n": 300000,
+  "sizes": {
+   "fluid": 7844,
+   "shz_cold": 9768,
+   "gzip": 27262,
+   "bzip2": 22342,
+   "xz": 17840,
+   "zstd": 20462,
+   "brotli": 18646,
+   "bsc": 19802,
+   "zstd_dict": 19814
+  },
+  "ok": true,
+  "info": {
+   "sig": 22880,
+   "cls": "logs",
+   "act": "B",
+   "how": "route"
+  },
+  "tc": 5.9,
+  "td": 6.7
+ },
+ {
+  "kind": "records",
+  "name": "Windows csv",
+  "n": 300000,
+  "sizes": {
+   "fluid": 4265,
+   "shz_cold": 6246,
+   "gzip": 15140,
+   "bzip2": 11540,
+   "xz": 9176,
+   "zstd": 10565,
+   "brotli": 9082,
+   "bsc": 10946,
+   "zstd_dict": 10239
+  },
+  "ok": true,
+  "info": {
+   "sig": 6416,
+   "cls": "logs",
+   "act": "B",
+   "how": "measured"
+  },
+  "tc": 68.7,
+  "td": 4.8
+ },
+ {
+  "kind": "records",
+  "name": "Zookeeper csv",
+  "n": 300000,
+  "sizes": {
+   "fluid": 7375,
+   "shz_cold": 8851,
+   "gzip": 21926,
+   "bzip2": 16866,
+   "xz": 15496,
+   "zstd": 17306,
+   "brotli": 15718,
+   "bsc": 16156,
+   "zstd_dict": 17072
+  },
+  "ok": true,
+  "info": {
+   "sig": 22880,
+   "cls": "logs",
+   "act": "B",
+   "how": "route"
+  },
+  "tc": 7.0,
+  "td": 6.2
+ },
+ {
+  "kind": "ai-chat",
+  "name": "wildchat_05 64K",
+  "n": 65536,
+  "sizes": {
+   "fluid": 8201,
+   "shz_cold": 11377,
+   "gzip": 15671,
+   "bzip2": 14982,
+   "xz": 13368,
+   "zstd": 14662,
+   "brotli": 11874,
+   "bsc": 13784,
+   "zstd_dict": 12772
+  },
+  "ok": true,
+  "info": {
+   "sig": 17569,
+   "cls": "chat",
+   "act": "B",
+   "how": "route"
+  },
+  "tc": 22.5,
+  "td": 14.2
+ },
+ {
+  "kind": "ai-chat",
+  "name": "wildchat_05 1M",
+  "n": 1048576,
+  "sizes": {
+   "fluid": 120380,
+   "shz_cold": 131898,
+   "gzip": 228184,
+   "bzip2": 181511,
+   "xz": 172224,
+   "zstd": 187264,
+   "brotli": 161934,
+   "bsc": 161810,
+   "zstd_dict": 187244
+  },
+  "ok": true,
+  "info": {
+   "sig": 18512,
+   "cls": "chat",
+   "act": "B",
+   "how": "measured"
+  },
+  "tc": 70.2,
+  "td": 12.5
+ },
+ {
+  "kind": "ai-chat",
+  "name": "wildchat_07 64K",
+  "n": 65536,
+  "sizes": {
+   "fluid": 7167,
+   "shz_cold": 10455,
+   "gzip": 15480,
+   "bzip2": 13445,
+   "xz": 12536,
+   "zstd": 14117,
+   "brotli": 11264,
+   "bsc": 12496,
+   "zstd_dict": 12414
+  },
+  "ok": true,
+  "info": {
+   "sig": 17570,
+   "cls": "chat",
+   "act": "B",
+   "how": "route"
+  },
+  "tc": 11.1,
+  "td": 10.2
+ },
+ {
+  "kind": "ai-chat",
+  "name": "wildchat_07 1M",
+  "n": 1048576,
+  "sizes": {
+   "fluid": 120870,
+   "shz_cold": 132202,
+   "gzip": 230300,
+   "bzip2": 182656,
+   "xz": 171580,
+   "zstd": 187585,
+   "brotli": 162111,
+   "bsc": 161500,
+   "zstd_dict": 188047
+  },
+  "ok": true,
+  "info": {
+   "sig": 18593,
+   "cls": "chat",
+   "act": "B",
+   "how": "measured"
+  },
+  "tc": 66.7,
+  "td": 13.4
+ },
+ {
+  "kind": "ai-chat",
+  "name": "wildchat_12 64K",
+  "n": 65536,
+  "sizes": {
+   "fluid": 8434,
+   "shz_cold": 11940,
+   "gzip": 16688,
+   "bzip2": 15181,
+   "xz": 14200,
+   "zstd": 15796,
+   "brotli": 12392,
+   "bsc": 14166,
+   "zstd_dict": 13544
+  },
+  "ok": true,
+  "info": {
+   "sig": 18593,
+   "cls": "chat",
+   "act": "B",
+   "how": "measured"
+  },
+  "tc": 45.2,
+  "td": 9.9
+ },
+ {
+  "kind": "ai-chat",
+  "name": "wildchat_12 1M",
+  "n": 1048576,
+  "sizes": {
+   "fluid": 129724,
+   "shz_cold": 143025,
+   "gzip": 242793,
+   "bzip2": 194272,
+   "xz": 186580,
+   "zstd": 201812,
+   "brotli": 173886,
+   "bsc": 173656,
+   "zstd_dict": 202011
+  },
+  "ok": true,
+  "info": {
+   "sig": 18594,
+   "cls": "chat",
+   "act": "B",
+   "how": "measured"
+  },
+  "tc": 65.0,
+  "td": 12.5
+ },
+ {
+  "kind": "ai-chat",
+  "name": "wildchat_13 64K",
+  "n": 65536,
+  "sizes": {
+   "fluid": 8873,
+   "shz_cold": 11773,
+   "gzip": 16865,
+   "bzip2": 14834,
+   "xz": 14064,
+   "zstd": 15616,
+   "brotli": 12803,
+   "bsc": 13890,
+   "zstd_dict": 14048
+  },
+  "ok": true,
+  "info": {
+   "sig": 17571,
+   "cls": "chat",
+   "act": "B",
+   "how": "measured"
+  },
+  "tc": 45.9,
+  "td": 10.1
+ },
+ {
+  "kind": "ai-chat",
+  "name": "wildchat_13 1M",
+  "n": 1048576,
+  "sizes": {
+   "fluid": 129772,
+   "shz_cold": 140449,
+   "gzip": 243184,
+   "bzip2": 192066,
+   "xz": 181688,
+   "zstd": 200842,
+   "brotli": 172819,
+   "bsc": 172668,
+   "zstd_dict": 203549
+  },
+  "ok": true,
+  "info": {
+   "sig": 17554,
+   "cls": "chat",
+   "act": "B",
+   "how": "measured"
+  },
+  "tc": 66.5,
+  "td": 12.5
+ },
+ {
+  "kind": "ai-api",
+  "name": "embeddings_00 256K",
+  "n": 262144,
+  "sizes": {
+   "fluid": 84867,
+   "shz_cold": 85938,
+   "gzip": 108744,
+   "bzip2": 95008,
+   "xz": 97696,
+   "zstd": 95568,
+   "brotli": 94797,
+   "bsc": 89696,
+   "zstd_dict": 95967
+  },
+  "ok": true,
+  "info": {
+   "sig": 32816,
+   "cls": "emb",
+   "act": "B",
+   "how": "route"
+  },
+  "tc": 10.0,
+  "td": 9.8
+ },
+ {
+  "kind": "ai-api",
+  "name": "embeddings_01 256K",
+  "n": 262144,
+  "sizes": {
+   "fluid": 84946,
+   "shz_cold": 86069,
+   "gzip": 108833,
+   "bzip2": 95084,
+   "xz": 97628,
+   "zstd": 95475,
+   "brotli": 94856,
+   "bsc": 89716,
+   "zstd_dict": 94868
+  },
+  "ok": true,
+  "info": {
+   "sig": 32816,
+   "cls": "emb",
+   "act": "B",
+   "how": "route"
+  },
+  "tc": 9.9,
+  "td": 10.0
+ },
+ {
+  "kind": "ai-api",
+  "name": "logprobs_00 256K",
+  "n": 262144,
+  "sizes": {
+   "fluid": 18272,
+   "shz_cold": 23429,
+   "gzip": 40713,
+   "bzip2": 30520,
+   "xz": 32212,
+   "zstd": 33579,
+   "brotli": 31039,
+   "bsc": 27636,
+   "zstd_dict": 31318
+  },
+  "ok": true,
+  "info": {
+   "sig": 16880,
+   "cls": "lp",
+   "act": "R",
+   "how": "route"
+  },
+  "tc": 5.0,
+  "td": 4.9
+ },
+ {
+  "kind": "ai-api",
+  "name": "logprobs_01 256K",
+  "n": 262144,
+  "sizes": {
+   "fluid": 19141,
+   "shz_cold": 24316,
+   "gzip": 41730,
+   "bzip2": 31554,
+   "xz": 33208,
+   "zstd": 34729,
+   "brotli": 32009,
+   "bsc": 28732,
+   "zstd_dict": 32523
+  },
+  "ok": true,
+  "info": {
+   "sig": 16880,
+   "cls": "lp",
+   "act": "R",
+   "how": "route"
+  },
+  "tc": 4.6,
+  "td": 4.9
+ },
+ {
+  "kind": "binary",
+  "name": "bash",
+  "n": 1048576,
+  "sizes": {
+   "fluid": 372665,
+   "shz_cold": 373966,
+   "gzip": 523649,
+   "bzip2": 507576,
+   "xz": 417980,
+   "zstd": 457747,
+   "brotli": 430374,
+   "bsc": 455758,
+   "zstd_dict": 459448
+  },
+  "ok": true,
+  "info": {
+   "sig": 4367,
+   "cls": "text",
+   "act": "B",
+   "how": "measured"
+  },
+  "tc": 74.2,
+  "td": 14.1
+ },
+ {
+  "kind": "binary",
+  "name": "zsh",
+  "n": 1048576,
+  "sizes": {
+   "fluid": 385512,
+   "shz_cold": 385802,
+   "gzip": 534750,
+   "bzip2": 523129,
+   "xz": 429284,
+   "zstd": 470534,
+   "brotli": 441713,
+   "bsc": 473808,
+   "zstd_dict": 472009
+  },
+  "ok": true,
+  "info": {
+   "sig": 4367,
+   "cls": "emb",
+   "act": "B",
+   "how": "measured"
+  },
+  "tc": 74.6,
+  "td": 14.0
+ },
+ {
+  "kind": "binary",
+  "name": "ksh",
+  "n": 1048576,
+  "sizes": {
+   "fluid": 373649,
+   "shz_cold": 375947,
+   "gzip": 510141,
+   "bzip2": 508023,
+   "xz": 420780,
+   "zstd": 460673,
+   "brotli": 431458,
+   "bsc": 471646,
+   "zstd_dict": 462067
+  },
+  "ok": true,
+  "info": {
+   "sig": 4363,
+   "cls": "text",
+   "act": "B",
+   "how": "measured"
+  },
+  "tc": 73.4,
+  "td": 15.2
+ },
+ {
+  "kind": "binary",
+  "name": "Helvetica.ttc",
+  "n": 1048576,
+  "sizes": {
+   "fluid": 305607,
+   "shz_cold": 307999,
+   "gzip": 467463,
+   "bzip2": 399740,
+   "xz": 331216,
+   "zstd": 354774,
+   "brotli": 335304,
+   "bsc": 354676,
+   "zstd_dict": 361368
+  },
+  "ok": true,
+  "info": {
+   "sig": 4382,
+   "cls": "lp",
+   "act": "R",
+   "how": "measured"
+  },
+  "tc": 74.3,
+  "td": 12.8
+ },
+ {
+  "kind": "binary",
+  "name": "Arial.ttf",
+  "n": 773236,
+  "sizes": {
+   "fluid": 319408,
+   "shz_cold": 319678,
+   "gzip": 423711,
+   "bzip2": 428388,
+   "xz": 349044,
+   "zstd": 376730,
+   "brotli": 359857,
+   "bsc": 397884,
+   "zstd_dict": 377885
+  },
+  "ok": true,
+  "info": {
+   "sig": 12301,
+   "cls": "text",
+   "act": "B",
+   "how": "route"
+  },
+  "tc": 20.3,
+  "td": 20.9
+ },
+ {
+  "kind": "binary",
+  "name": "web2",
+  "n": 1048576,
+  "sizes": {
+   "fluid": 151583,
+   "shz_cold": 154966,
+   "gzip": 315888,
+   "bzip2": 356526,
+   "xz": 268792,
+   "zstd": 278473,
+   "brotli": 273063,
+   "bsc": 332324,
+   "zstd_dict": 279582
+  },
+  "ok": true,
+  "info": {
+   "sig": 15360,
+   "cls": "text",
+   "act": "B",
+   "how": "route"
+  },
+  "tc": 23.0,
+  "td": 21.5
+ }
+]

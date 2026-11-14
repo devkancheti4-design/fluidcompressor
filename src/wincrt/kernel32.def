@@ -1,0 +1,27 @@
+LIBRARY kernel32.dll
+EXPORTS
+  CloseHandle
+  CreateFileA
+  CreateThread
+  DeleteFileA
+  ExitProcess
+  GetCommandLineA
+  GetEnvironmentVariableA
+  GetFileSizeEx
+  GetLastError
+  GetModuleFileNameA
+  GetProcessHeap
+  GetStdHandle
+  GetSystemInfo
+  GlobalMemoryStatusEx
+  HeapAlloc
+  HeapFree
+  K32GetProcessMemoryInfo
+  QueryPerformanceCounter
+  QueryPerformanceFrequency
+  ReadFile
+  SetFilePointerEx
+  VirtualAlloc
+  VirtualFree
+  WaitForSingleObject
+  WriteFile
