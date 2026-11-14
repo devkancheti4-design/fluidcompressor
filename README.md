@@ -36,11 +36,14 @@ transcripts, unused regions of AI-API files, and six system binaries and fonts. 
 | [Silesia Open Source Compression Benchmark](https://mattmahoney.net/dc/silesia.html): 12 files, 211,938,580 bytes | 38,820,251 | **60 of 324** |
 | merged: the 75 programs listed in both tables | score 1.311 | **4 of 75**, behind paq8px, cmix and gleipnir |
 
+**Rankings page: https://devkancheti4-design.github.io/fluidcompressor/** (all 75 programs, sizes against speed).
+
 The merged score is the geometric mean of a program's two sizes, each divided by the best in the set; each program is its
 best entry in each table. Tables saved 13 November 2026. FluidCompressor's entries are local measurements on an Apple
 M4 Pro, not official listings. `python3 bench/rankings/merge_rank.py` rebuilds the ranking from the saved tables
-(`bench/rankings/merged_rank.md` has all 75 rows). The enwik9 entry puts the enwik9-specific preprocessing of fx2-cmix
-(GPL-3.0, not included) in front of FluidCompressor's coder; see `NOTICE.md`.
+(`bench/rankings/merged_rank.md` has all 75 rows). The enwik9 entry puts the enwik9-specific preprocessing of
+[fx2-cmix](https://github.com/kaitz/fx2-cmix) by Kaido Orav and Byron Knoll (GPL-3.0, not included) in front of
+FluidCompressor's coder; see `NOTICE.md`.
 
 ### Windows: the same bytes on a budget laptop
 
@@ -125,6 +128,7 @@ Mac reference runs: `bench/results/mac_m4pro_plain_1thread.txt` and `bench/resul
 | `src/plat_posix.c`, `src/wincrt/` | the machine layer: POSIX, and a small C runtime written on kernel32 for Windows |
 | `memory/` | the memories and lessons |
 | `bench/` | the sealed test, the rankings, and the reference results |
+| `docs/` | the rankings page (GitHub Pages), built by `tools/build_rank_page.py` |
 | `proofs/`, `tools/` | the law checks; the tool that writes `fluid_tables.h` |
 
 ## License

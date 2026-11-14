@@ -26,9 +26,12 @@ FluidCompressor's own entries are local measurements, not official listings.
 
 ## The enwik9 entry
 
-FluidCompressor's enwik9 result uses the enwik9-specific preprocessing of fx2-cmix (article reordering, the wiki
-transform and its dictionary; GPL-3.0) in front of FluidCompressor's coder. That preprocessing is not part of this
-repository.
+FluidCompressor's enwik9 result uses the enwik9-specific preprocessing published with
+[fx2-cmix](https://github.com/kaitz/fx2-cmix) by Kaido Orav and Byron Knoll (article reordering, the wiki transform
+and its dictionary; GPL-3.0) in front of FluidCompressor's coder. That preprocessing is not part of this repository.
+
+The rankings page in `docs/` loads d3 (ISC license) from cdnjs and the Source Sans 3 and Source Serif 4 fonts (SIL Open
+Font License) from Google Fonts.
 
 ## Loghub license notice
 

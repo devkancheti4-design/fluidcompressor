@@ -1,0 +1,250 @@
+<meta name="dash-one-writer">
+<style>
+  .mcr { display: grid; gap: var(--cds-gap-xl); max-width: 1100px; font-family: var(--font-anthropic-sans); color: var(--color-fg); }
+  .mcr-head { display: grid; gap: var(--cds-gap-sm); }
+  .mcr-title { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-title); margin: 0; text-wrap: balance; }
+  .mcr-lede { font-size: var(--cds-font-size-heading); margin: 0; max-width: 62ch; line-height: 1.45; text-wrap: pretty; }
+  .mcr-lede b { font-weight: var(--cds-font-weight-medium); font-variant-numeric: tabular-nums; }
+  .mcr-intro { margin: 0; max-width: 68ch; color: var(--color-fg-muted); line-height: 1.55; }
+  .mcr-intro a, .mcr-notes a { color: inherit; }
+  .mcr h2 { font-size: var(--cds-font-size-heading); font-weight: var(--cds-font-weight-medium); margin: 0; }
+  .mcr-section { display: grid; gap: var(--cds-gap-md); min-width: 0; }
+  .mcr-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: var(--cds-gap-md); }
+  .mcr-card { background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-lg); display: grid; gap: var(--cds-gap-sm); align-content: start; min-width: 0; }
+  .mcr-card h3 { margin: 0; font-size: var(--cds-font-size-body); font-weight: var(--cds-font-weight-medium); }
+  .mcr-card h3 a { color: inherit; }
+  .mcr-card p { margin: 0; color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); line-height: 1.45; }
+  .mcr-figs { display: flex; flex-wrap: wrap; gap: var(--cds-gap-lg); margin-top: var(--cds-gap-xs); }
+  .mcr-fig { display: grid; gap: 2px; }
+  .mcr-fig span { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); letter-spacing: .02em; }
+  .mcr-fig b { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-heading); font-variant-numeric: tabular-nums; }
+  .mcr-tablewrap { overflow-x: auto; border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); }
+  .mcr-table { border-collapse: collapse; width: 100%; font-size: var(--cds-font-size-caption); font-variant-numeric: tabular-nums; }
+  .mcr-table th, .mcr-table td { padding: 7px 10px; text-align: right; white-space: nowrap; border-bottom: 1px solid var(--color-border-line); }
+  .mcr-table th { font-weight: var(--cds-font-weight-medium); color: var(--color-fg-muted); background: var(--color-panel); position: sticky; top: 0; }
+  .mcr-table th:nth-child(2), .mcr-table td:nth-child(2) { text-align: left; }
+  .mcr-table tbody tr:last-child td { border-bottom: 0; }
+  .mcr-table tr.mcr-ours td { background: var(--color-panel); font-weight: var(--cds-font-weight-medium); }
+  .mcr-table td.mcr-sub { color: var(--color-fg-muted); }
+  .mcr-legend { margin: 0; font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); max-width: 72ch; line-height: 1.5; }
+  .mcr-chart { position: relative; min-height: 300px; min-width: 0; }
+  .mcr-chart svg { display: block; width: 100%; }
+  .mcr-chart .tick text, .mcr-chart .mcr-axlabel { fill: var(--cds-text-secondary); font-size: var(--cds-font-size-caption); font-family: var(--font-anthropic-sans); }
+  .mcr-chart .domain, .mcr-chart .tick line { stroke: var(--cds-chart-axis); }
+  .mcr-chart .mcr-grid line { stroke: var(--cds-chart-grid); }
+  .mcr-chart .mcr-dotlabel { font-size: var(--cds-font-size-caption); fill: var(--color-fg); font-family: var(--font-anthropic-sans); }
+  .mcr-tip { position: absolute; pointer-events: none; background: var(--cds-surface-popover); border: 1px solid var(--cds-border); box-shadow: var(--cds-shadow-popover); border-radius: var(--cds-radius); padding: 6px 9px; font-size: var(--cds-font-size-caption); color: var(--color-fg); white-space: nowrap; }
+  .mcr-tip span { color: var(--cds-text-secondary); }
+  .mcr-take { margin: 0; max-width: 68ch; line-height: 1.5; }
+  .mcr-take b { font-variant-numeric: tabular-nums; font-weight: var(--cds-font-weight-medium); }
+  .mcr-notes { display: grid; gap: var(--cds-gap-sm); max-width: 72ch; color: var(--color-fg-muted); line-height: 1.55; margin: 0; padding-left: 1.1em; }
+  .mcr-notes b { color: var(--color-fg); font-weight: var(--cds-font-weight-medium); font-variant-numeric: tabular-nums; }
+  .mcr details { border-top: 1px solid var(--color-border-line); padding-top: var(--cds-gap-md); }
+  .mcr summary { cursor: pointer; font-weight: var(--cds-font-weight-medium); }
+  .mcr summary:focus-visible, .mcr a:focus-visible { outline: 2px solid var(--color-fg); outline-offset: 2px; }
+  [data-dash-source-state=refreshing] { opacity: .5; }
+</style>
+
+<div class="mcr">
+  <header class="mcr-head" id="top">
+    <h1 class="mcr-title">Merged Compression Rankings</h1>
+    <p class="mcr-lede" id="finding">FluidCompressor ranks <b data-draw="fluidrank" data-source="merged" data-field="rank" data-where="program=FluidCompressor">—</b> of <b data-draw="nprog" data-source="count">—</b> programs listed in both of Matt Mahoney's benchmarks, behind <b data-draw="leaders" data-source="merged">—</b>, and <b data-draw="bytesrank" data-source="merged" data-field="bytes_rank" data-where="program=FluidCompressor">—</b> by total bytes.</p>
+    <p class="mcr-intro">Matt Mahoney maintains the two largest public compression benchmarks: the <a href="https://mattmahoney.net/dc/text.html" target="_blank" rel="noopener">Large Text Compression Benchmark</a> and the <a href="https://mattmahoney.net/dc/silesia.html" target="_blank" rel="noopener">Silesia Open Source Compression Benchmark</a>. This page merges them into one ranking of the programs that appear in both, so a compressor has to do well on Wikipedia text and on mixed data at the same time.</p>
+    <p class="mcr-intro" id="source">FluidCompressor is open source: its code, the sealed test files and a Windows build are on <a href="https://github.com/devkancheti4-design/fluidcompressor" target="_blank" rel="noopener">GitHub</a> under AGPL-3.0. On a Windows laptop with a Core i3, every sealed-test archive came out byte-identical to the Mac's.</p>
+  </header>
+
+  <section class="mcr-section" id="benchmarks" aria-labelledby="benchmarks-h">
+    <h2 id="benchmarks-h">The two benchmarks</h2>
+    <div class="mcr-cards" data-draw="cards" data-source="tables"></div>
+  </section>
+
+  <section class="mcr-section" id="ranking" aria-labelledby="ranking-h">
+    <h2 id="ranking-h">Merged ranking</h2>
+    <p class="mcr-legend">Score is the geometric mean of a program's two sizes, each divided by the best size in the merged set, so both benchmarks weigh equally. Lower is better; 1.0 would mean the best result on both. Speeds are the compress and decompress times per byte listed by the Large Text Compression Benchmark.</p>
+    <div class="mcr-tablewrap">
+      <table class="mcr-table" id="ranking-table" data-source="merged" data-row-key="program">
+        <thead>
+          <tr>
+            <th data-field="rank">#</th>
+            <th data-field="program">Program</th>
+            <th data-field="score">Score</th>
+            <th data-field="enwik9_total">enwik9 + decompressor (bytes)</th>
+            <th data-field="enwik9_rank_in_set">rank</th>
+            <th data-field="silesia_total">Silesia total (bytes)</th>
+            <th data-field="silesia_rank_in_set">rank</th>
+            <th data-field="comp_ns_per_byte">compress ns/byte</th>
+            <th data-field="decomp_ns_per_byte">decompress ns/byte</th>
+          </tr>
+        </thead>
+        <tbody data-draw="rows"></tbody>
+      </table>
+    </div>
+    <p class="mcr-legend">The highlighted row, FluidCompressor, is a local measurement and not an official listing in either benchmark (see below). Its speeds are approximate, measured on one Apple M4 Pro core.</p>
+  </section>
+
+  <section class="mcr-section" id="speed" aria-labelledby="speed-h">
+    <h2 id="speed-h">Size and speed</h2>
+    <p class="mcr-take" id="speed-take">Programs with a better merged score that also compress faster than FluidCompressor: <b data-draw="dominating" data-source="dominating">—</b>.</p>
+    <div class="mcr-chart" id="speed-chart" data-draw="chart" data-source="merged"></div>
+    <p class="mcr-legend">Higher on the chart is a better score; further left is faster. The benchmark's times were measured by many contributors on different machines over many years, and FluidCompressor's on an Apple M4 Pro, so the horizontal positions are indicative only.</p>
+  </section>
+
+  <section class="mcr-section" id="fluid" aria-labelledby="fluid-h">
+    <h2 id="fluid-h">About the FluidCompressor entry</h2>
+    <ul class="mcr-notes">
+      <li>enwik9: <b data-draw="f_e9" data-source="merged" data-field="enwik9_total" data-where="program=FluidCompressor">—</b> bytes in total (<span data-draw="f_e9entry" data-source="merged" data-field="enwik9_entry" data-where="program=FluidCompressor">—</span>), rank <b data-draw="f_e9full" data-source="merged" data-field="enwik9_rank_full" data-where="program=FluidCompressor">—</b> in the full Large Text Compression Benchmark table.</li>
+      <li>Silesia: <b data-draw="f_sil" data-source="merged" data-field="silesia_total" data-where="program=FluidCompressor">—</b> bytes, rank <b data-draw="f_silfull" data-source="merged" data-field="silesia_rank_full" data-where="program=FluidCompressor">—</b> in the full Silesia table. This run uses FluidCompressor's coder alone, with nothing installed.</li>
+      <li>Measured locally on an Apple M4 Pro on 14 November 2026. These are not official listings. Every archive was decompressed and compared byte for byte with the original.</li>
+      <li>The enwik9 run uses the preprocessing published with <a href="https://github.com/kaitz/fx2-cmix" target="_blank" rel="noopener">fx2-cmix</a> by Kaido Orav and Byron Knoll (GPL-3.0): article reordering, a wiki-markup transform and a word dictionary. FluidCompressor's own coder follows.</li>
+      <li>FluidCompressor's code is public under AGPL-3.0 at <a href="https://github.com/devkancheti4-design/fluidcompressor" target="_blank" rel="noopener">github.com/devkancheti4-design/fluidcompressor</a>, with the sealed test files, the script that rebuilds this ranking, and the Mac and Windows results.</li>
+    </ul>
+  </section>
+
+  <details id="method">
+    <summary>How the merge works</summary>
+    <ul class="mcr-notes">
+      <li>A program is its first name token without a separated version number. Digits that are part of a name are kept, so paq8l, paq9a, fp8 and bzip2 stay distinct. A pipeline counts as its own program, except a preprocessor packaged by the same author, the way the Large Text Compression Benchmark lists drt|lpaq9m as lpaq9m.</li>
+      <li>Each program is represented by its best entry in each table: on enwik9 by that benchmark's own measure, compressed enwik9 plus the zipped decompressor; on Silesia by the total of its 12 files.</li>
+      <li>Only programs listed in both tables are ranked, plus FluidCompressor.</li>
+      <li>The score divides each size by the best in the merged set and takes the geometric mean of the two. Ordering by total bytes, or by the mean of the two ranks, gives almost the same list.</li>
+      <li>Tables saved on <b data-draw="saved" data-source="tables" data-field="saved" data-row="0">—</b> from the two benchmark pages.</li>
+    </ul>
+  </details>
+</div>
+
+<script>
+  dash.calc('count', {inputs: ['merged'], title: 'Programs in the merged ranking', description: 'How many programs appear in both tables, counting FluidCompressor.',
+    fn: (merged) => merged.length});
+  dash.calc('dominating', {inputs: ['merged'], title: 'Smaller and faster than FluidCompressor', description: 'Programs with a lower merged score and a lower compress time per byte than FluidCompressor.',
+    fn: (merged) => {
+      const f = merged.find((r) => r.ours === true || r.ours === 'true');
+      if (!f) return null;
+      return merged.filter((r) => r !== f && Number(r.score) < Number(f.score) && r.comp_ns_per_byte != null && Number(r.comp_ns_per_byte) < Number(f.comp_ns_per_byte)).length;
+    }});
+</script>
+
+<script>
+  window.mcrFmt = { int: d3.format(','), score: d3.format('.4f') };
+  window.mcrFluid = (rows) => rows.find((r) => r.ours === true || r.ours === 'true');
+  const mcrCell = (name, field, fmt) => dash.draw(name, (el) => {
+    const d = dash.data('merged');
+    const f = d.status === 'ok' ? window.mcrFluid(d.data) : null;
+    el.textContent = f && f[field] != null ? (fmt ? fmt(f[field]) : String(f[field])) : '—';
+  });
+  mcrCell('fluidrank', 'rank');
+  mcrCell('bytesrank', 'bytes_rank');
+  mcrCell('f_e9', 'enwik9_total', (v) => window.mcrFmt.int(v));
+  mcrCell('f_e9entry', 'enwik9_entry');
+  mcrCell('f_e9full', 'enwik9_rank_full');
+  mcrCell('f_sil', 'silesia_total', (v) => window.mcrFmt.int(v));
+  mcrCell('f_silfull', 'silesia_rank_full');
+
+  dash.draw('nprog', (el) => { const c = dash.data('count'); el.textContent = c.status === 'ok' && c.data != null ? String(c.data) : '—'; });
+  dash.draw('dominating', (el) => { const c = dash.data('dominating'); el.textContent = c.status === 'ok' && c.data != null ? String(c.data) : '—'; });
+  dash.draw('saved', (el) => { const t = dash.data('tables'); el.textContent = t.status === 'ok' && t.data[0] ? String(t.data[0].saved) : '—'; });
+
+  dash.draw('leaders', (el) => {
+    const d = dash.data('merged');
+    const f = d.status === 'ok' ? window.mcrFluid(d.data) : null;
+    if (!f) { el.textContent = '—'; return; }
+    const names = d.data.filter((r) => Number(r.rank) < Number(f.rank)).sort((a, b) => a.rank - b.rank).map((r) => r.program);
+    el.textContent = names.length === 0 ? 'no one' : names.length === 1 ? names[0] : names.slice(0, -1).join(', ') + ' and ' + names[names.length - 1];
+  });
+
+  dash.draw('cards', (el) => {
+    const t = dash.data('tables');
+    el.replaceChildren();
+    if (t.status !== 'ok') { el.textContent = '—'; return; }
+    t.data.forEach((r, i) => {
+      const card = document.createElement('article'); card.className = 'mcr-card'; card.id = 'bench-' + i;
+      const h = document.createElement('h3'); const a = document.createElement('a');
+      a.href = r.url; a.target = '_blank'; a.rel = 'noopener'; a.textContent = r.benchmark; h.append(a);
+      const p1 = document.createElement('p'); p1.textContent = 'Corpus: ' + r.corpus + '.';
+      const p2 = document.createElement('p'); p2.textContent = 'Ranked by ' + r.measure + '.';
+      const figs = document.createElement('div'); figs.className = 'mcr-figs';
+      const fig = (label, field, value) => {
+        const f = document.createElement('div'); f.className = 'mcr-fig';
+        const s = document.createElement('span'); s.textContent = label;
+        const b = document.createElement('b'); b.textContent = value;
+        b.setAttribute('data-source', 'tables'); b.setAttribute('data-field', field); b.setAttribute('data-row', String(i));
+        f.append(s, b); return f;
+      };
+      figs.append(fig('Programs listed', 'programs_listed', window.mcrFmt.int(r.programs_listed)),
+                  fig('FluidCompressor bytes', 'fluid_total', window.mcrFmt.int(r.fluid_total)),
+                  fig('FluidCompressor rank', 'fluid_rank', String(r.fluid_rank)));
+      const p3 = document.createElement('p'); p3.textContent = 'Rank ' + r.fluid_rank + ' of ' + r.ranked_with_fluid + ' once FluidCompressor is added.';
+      card.append(h, p1, p2, figs, p3); el.append(card);
+    });
+  });
+
+  dash.draw('rows', (tbody) => {
+    const d = dash.data('merged');
+    tbody.replaceChildren();
+    if (d.status !== 'ok') return;
+    const f = window.mcrFmt;
+    d.data.slice().sort((a, b) => a.rank - b.rank).forEach((r) => {
+      const tr = document.createElement('tr');
+      if (r.ours === true || r.ours === 'true') tr.className = 'mcr-ours';
+      tr.setAttribute('data-key', encodeURIComponent(r.program));
+      const cell = (v, cls) => { const td = document.createElement('td'); td.textContent = v; if (cls) td.className = cls; return td; };
+      tr.append(cell(String(r.rank)), cell(r.program), cell(f.score(r.score)), cell(f.int(r.enwik9_total)), cell(String(r.enwik9_rank_in_set), 'mcr-sub'),
+                cell(f.int(r.silesia_total)), cell(String(r.silesia_rank_in_set), 'mcr-sub'),
+                cell(r.comp_ns_per_byte == null ? '' : f.int(r.comp_ns_per_byte)), cell(r.decomp_ns_per_byte == null ? '' : f.int(r.decomp_ns_per_byte)));
+      tbody.append(tr);
+    });
+  });
+
+  dash.draw('chart', (el) => {
+    const d = dash.data('merged');
+    el.replaceChildren();
+    if (d.status === 'error') { const p = document.createElement('p'); p.className = 'mcr-legend'; p.textContent = 'Failed to load'; el.append(p); return; }
+    if (d.status !== 'ok') { el.textContent = '—'; return; }
+    const rows = d.data.filter((r) => Number(r.comp_ns_per_byte) > 0).map((r) => ({...r, ns: Number(r.comp_ns_per_byte), sc: Number(r.score), us: r.ours === true || r.ours === 'true'}));
+    const W = Math.max(280, el.clientWidth || 600), H = Math.round(Math.max(280, Math.min(440, W * 0.58)));
+    const svg = d3.select(el).append('svg').attr('viewBox', `0 0 ${W} ${H}`).attr('width', '100%').attr('role', 'img')
+      .attr('aria-label', 'Scatter plot of each program\'s merged score against its compress time per byte, with FluidCompressor highlighted.');
+    const y = d3.scaleLinear().domain(d3.extent(rows, (r) => r.sc)).nice();
+    const probe = svg.append('g').attr('class', 'tick');
+    let ml = 0; y.ticks(6).forEach((t) => { const tx = probe.append('text').text(d3.format('.2f')(t)); ml = Math.max(ml, tx.node().getComputedTextLength()); });
+    probe.remove();
+    const m = {l: Math.ceil(ml) + 22, r: 18, t: 14, b: 44};
+    y.range([m.t, H - m.b]);
+    const x = d3.scaleLog().domain([d3.min(rows, (r) => r.ns) / 1.6, d3.max(rows, (r) => r.ns) * 1.6]).range([m.l, W - m.r]);
+    const nx = Math.max(3, Math.floor((W - m.l - m.r) / 90));
+    svg.append('g').attr('class', 'mcr-grid').attr('transform', `translate(${m.l},0)`).call(d3.axisLeft(y).ticks(6).tickSize(-(W - m.l - m.r)).tickFormat('')).call((g) => g.select('.domain').remove());
+    svg.append('g').attr('transform', `translate(0,${H - m.b})`).call(d3.axisBottom(x).ticks(nx, '~s'));
+    svg.append('g').attr('transform', `translate(${m.l},0)`).call(d3.axisLeft(y).ticks(6).tickFormat(d3.format('.2f')));
+    svg.append('text').attr('class', 'mcr-axlabel').attr('x', (m.l + W - m.r) / 2).attr('y', H - 8).attr('text-anchor', 'middle').text('compress time per byte, ns (log scale)');
+    svg.append('text').attr('class', 'mcr-axlabel').attr('transform', `translate(12,${(m.t + H - m.b) / 2}) rotate(-90)`).attr('text-anchor', 'middle').text('merged score');
+    const tip = document.createElement('div'); tip.className = 'mcr-tip'; tip.hidden = true; el.append(tip);
+    const show = (ev, r) => {
+      tip.replaceChildren(); const b = document.createElement('b'); b.textContent = r.program; const s = document.createElement('span');
+      s.textContent = '  score ' + d3.format('.4f')(r.sc) + ' · compress ' + d3.format(',')(r.ns) + ' ns/B' + (r.decomp_ns_per_byte != null ? ' · decompress ' + d3.format(',')(Number(r.decomp_ns_per_byte)) + ' ns/B' : '');
+      tip.append(b, s); tip.hidden = false;
+      const [px, py] = d3.pointer(ev, el); const tw = tip.offsetWidth;
+      tip.style.left = Math.max(0, Math.min(el.clientWidth - tw, px - tw / 2)) + 'px'; tip.style.top = Math.max(0, py - 44) + 'px';
+    };
+    const pts = svg.append('g');
+    pts.selectAll('circle').data(rows.slice().sort((a, b) => a.us - b.us)).join('circle')
+      .attr('cx', (r) => x(r.ns)).attr('cy', (r) => y(r.sc)).attr('r', (r) => r.us ? 7 : 4.5)
+      .style('fill', (r) => r.us ? dash.colors[1] : dash.colors[0]).style('stroke', 'var(--color-bg)').style('stroke-width', 2)
+      .on('mouseenter mousemove', show).on('mouseleave', () => { tip.hidden = true; });
+    const labeled = rows.filter((r) => r.us || Number(r.rank) <= 3).sort((a, b) => (b.us - a.us) || (a.rank - b.rank));
+    const placed = [];
+    const lg = svg.append('g');
+    labeled.forEach((r) => {
+      const cx = x(r.ns), cy = y(r.sc);
+      const t = lg.append('text').attr('class', 'mcr-dotlabel').style('font-weight', r.us ? 600 : 400).text(r.program);
+      const opts = [[cx + 10, cy + 4, 'start'], [cx - 10, cy + 4, 'end'], [cx, cy - 11, 'middle'], [cx, cy + 19, 'middle']];
+      let ok = false;
+      for (const [tx, ty, an] of opts) {
+        t.attr('x', tx).attr('y', ty).attr('text-anchor', an);
+        const b = t.node().getBBox();
+        const inside = b.x >= m.l && b.x + b.width <= W - m.r && b.y >= 0 && b.y + b.height <= H - m.b;
+        const clear = placed.every((p) => b.x > p.x + p.width + 3 || b.x + b.width + 3 < p.x || b.y > p.y + p.height + 1 || b.y + b.height + 1 < p.y);
+        if (inside && clear) { placed.push({x: b.x, y: b.y, width: b.width, height: b.height}); ok = true; break; }
+      }
+      if (!ok) t.remove();
+    });
+  });
+</script>

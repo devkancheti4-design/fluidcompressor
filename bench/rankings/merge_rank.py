@@ -34,7 +34,7 @@ def best(rows):
 lt = json.load(open(os.path.join(T, 'ltcb_rows.json')))
 st = [r for r in json.load(open(os.path.join(T, 'silesia_rows.json'))) if r['name'] != 'Uncompressed']
 L, S = best(lt), best(st)
-L['FluidCompressor'] = {'name': 'FluidCompressor (enwik9 132,510,285 + decompressor 161,853)', 'total': FLUID_E9 + FLUID_DEC}
+L['FluidCompressor'] = {'name': 'FluidCompressor wiki engine (enwik9 132,510,285 + decompressor 161,853)', 'total': FLUID_E9 + FLUID_DEC}
 S['FluidCompressor'] = {'name': 'FluidCompressor (no installed memory)', 'total': FLUID_SIL}
 P = sorted(set(L) & set(S)); n = len(P)
 lmin = min(L[p]['total'] for p in P); smin = min(S[p]['total'] for p in P)
@@ -43,10 +43,24 @@ sr = {p: i + 1 for i, p in enumerate(sorted(P, key=lambda p: S[p]['total']))}
 score = {p: math.sqrt(L[p]['total'] / lmin * S[p]['total'] / smin) for p in P}
 order = sorted(P, key=lambda p: score[p])
 full = lambda rows, tot: 1 + sum(r['total'] < tot for r in rows)
-rows = [dict(rank=i + 1, program=p, ours=p == 'FluidCompressor', score=round(score[p], 4),
-             enwik9_total=L[p]['total'], enwik9_entry=' '.join(L[p]['name'].split()), enwik9_rank_in_set=lr[p], enwik9_rank_full=full(lt, L[p]['total']),
-             silesia_total=S[p]['total'], silesia_entry=' '.join(S[p]['name'].split()), silesia_rank_in_set=sr[p], silesia_rank_full=full(st, S[p]['total']))
-        for i, p in enumerate(order)]
+bytes_rank = {p: i + 1 for i, p in enumerate(sorted(P, key=lambda p: L[p]['total'] + S[p]['total']))}
+def speeds(p):          # LTCB's timing columns after the sizes: compress and decompress ns per byte, as the table gives them
+    rest = L[p].get('rest', '').split()
+    c = int(rest[0]) if len(rest) > 1 and rest[0].isdigit() else None
+    d = None
+    if len(rest) > 1:
+        if rest[1].isdigit(): d = int(rest[1])
+        elif rest[1].replace('.', '', 1).isdigit(): d = float(rest[1])
+    return c, d
+rows = []
+for i, p in enumerate(order):
+    c, d = speeds(p)
+    rows.append(dict(rank=i + 1, program=p, ours=p == 'FluidCompressor', score=round(score[p], 4),
+                     enwik9_total=L[p]['total'], enwik9_entry=' '.join(L[p]['name'].split()), enwik9_rank_in_set=lr[p], enwik9_rank_full=full(lt, L[p]['total']),
+                     silesia_total=S[p]['total'], silesia_entry=' '.join(S[p]['name'].split()), silesia_rank_in_set=sr[p], silesia_rank_full=full(st, S[p]['total']),
+                     bytes_rank=bytes_rank[p], comp_ns_per_byte=c, decomp_ns_per_byte=d, note=''))
+fl = [r for r in rows if r['ours']][0]           # measured locally on one Apple M4 Pro core (sealed and Silesia runs)
+fl.update(comp_ns_per_byte=1200, decomp_ns_per_byte=1140, note='Local measurement on an Apple M4 Pro, 14 Nov 2026. Not an official listing.')
 json.dump(dict(meta=dict(ltcb_programs=len(lt), silesia_programs=len(st), merged_programs=n, tables_saved='13 Nov 2026',
                          ltcb_url='https://mattmahoney.net/dc/text.html', silesia_url='https://mattmahoney.net/dc/silesia.html'), rows=rows),
           open(os.path.join(HERE, 'merged.json'), 'w'), indent=1)

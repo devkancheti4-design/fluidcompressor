@@ -20,7 +20,11 @@
    "silesia_total": 27682006,
    "silesia_entry": "paq8px_v217 -12L",
    "silesia_rank_in_set": 1,
-   "silesia_rank_full": 1
+   "silesia_rank_full": 1,
+   "bytes_rank": 2,
+   "comp_ns_per_byte": 291916,
+   "decomp_ns_per_byte": 294847,
+   "note": ""
   },
   {
    "rank": 2,
@@ -34,7 +38,11 @@
    "silesia_total": 33307593,
    "silesia_entry": "cmix v8",
    "silesia_rank_in_set": 2,
-   "silesia_rank_full": 26
+   "silesia_rank_full": 26,
+   "bytes_rank": 1,
+   "comp_ns_per_byte": 622949,
+   "decomp_ns_per_byte": 638442,
+   "note": ""
   },
   {
    "rank": 3,
@@ -48,7 +56,11 @@
    "silesia_total": 34426438,
    "silesia_entry": "gleipnir 1.2.0 -9 -t1",
    "silesia_rank_in_set": 3,
-   "silesia_rank_full": 34
+   "silesia_rank_full": 34,
+   "bytes_rank": 4,
+   "comp_ns_per_byte": 5891,
+   "decomp_ns_per_byte": 5403,
+   "note": ""
   },
   {
    "rank": 4,
@@ -56,13 +68,17 @@
    "ours": true,
    "score": 1.311,
    "enwik9_total": 132672138,
-   "enwik9_entry": "FluidCompressor (enwik9 132,510,285 + decompressor 161,853)",
+   "enwik9_entry": "FluidCompressor wiki engine (enwik9 132,510,285 + decompressor 161,853)",
    "enwik9_rank_in_set": 3,
    "enwik9_rank_full": 31,
    "silesia_total": 38820251,
    "silesia_entry": "FluidCompressor (no installed memory)",
    "silesia_rank_in_set": 5,
-   "silesia_rank_full": 60
+   "silesia_rank_full": 60,
+   "bytes_rank": 3,
+   "comp_ns_per_byte": 1200,
+   "decomp_ns_per_byte": 1140,
+   "note": "Local measurement on an Apple M4 Pro, 14 Nov 2026. Not an official listing."
   },
   {
    "rank": 5,
@@ -76,7 +92,11 @@
    "silesia_total": 35457761,
    "silesia_entry": "fp8_v4 -8",
    "silesia_rank_in_set": 4,
-   "silesia_rank_full": 49
+   "silesia_rank_full": 49,
+   "bytes_rank": 8,
+   "comp_ns_per_byte": 20605,
+   "decomp_ns_per_byte": 22593,
+   "note": ""
   },
   {
    "rank": 6,
@@ -90,7 +110,11 @@
    "silesia_total": 38995519,
    "silesia_entry": "zpaq 6.21 -method 7",
    "silesia_rank_in_set": 6,
-   "silesia_rank_full": 60
+   "silesia_rank_full": 60,
+   "bytes_rank": 5,
+   "comp_ns_per_byte": 6699,
+   "decomp_ns_per_byte": 14739,
+   "note": ""
   },
   {
    "rank": 7,
@@ -104,7 +128,11 @@
    "silesia_total": 40068926,
    "silesia_entry": "mcm 0.82 -9 -max",
    "silesia_rank_in_set": 7,
-   "silesia_rank_full": 70
+   "silesia_rank_full": 70,
+   "bytes_rank": 6,
+   "comp_ns_per_byte": 394,
+   "decomp_ns_per_byte": 281,
+   "note": ""
   },
   {
    "rank": 8,
@@ -118,7 +146,11 @@
    "silesia_total": 41492486,
    "silesia_entry": "lpaq9m 9",
    "silesia_rank_in_set": 8,
-   "silesia_rank_full": 81
+   "silesia_rank_full": 81,
+   "bytes_rank": 7,
+   "comp_ns_per_byte": 868,
+   "decomp_ns_per_byte": 898,
+   "note": ""
   },
   {
    "rank": 9,
@@ -132,7 +164,11 @@
    "silesia_total": 41792744,
    "silesia_entry": "xwrt -l14 -b128",
    "silesia_rank_in_set": 10,
-   "silesia_rank_full": 84
+   "silesia_rank_full": 84,
+   "bytes_rank": 9,
+   "comp_ns_per_byte": 2537,
+   "decomp_ns_per_byte": 2328,
+   "note": ""
   },
   {
    "rank": 10,
@@ -146,7 +182,11 @@
    "silesia_total": 41762620,
    "silesia_entry": "paq9a",
    "silesia_rank_in_set": 9,
-   "silesia_rank_full": 83
+   "silesia_rank_full": 83,
+   "bytes_rank": 10,
+   "comp_ns_per_byte": 3997,
+   "decomp_ns_per_byte": 4021,
+   "note": ""
   },
   {
    "rank": 11,
@@ -160,7 +200,11 @@
    "silesia_total": 42751127,
    "silesia_entry": "cmm4 87",
    "silesia_rank_in_set": 11,
-   "silesia_rank_full": 92
+   "silesia_rank_full": 92,
+   "bytes_rank": 16,
+   "comp_ns_per_byte": 2052,
+   "decomp_ns_per_byte": 2056,
+   "note": ""
   },
   {
    "rank": 12,
@@ -174,7 +218,11 @@
    "silesia_total": 46888561,
    "silesia_entry": "glza 0.5",
    "silesia_rank_in_set": 19,
-   "silesia_rank_full": 115
+   "silesia_rank_full": 115,
+   "bytes_rank": 11,
+   "comp_ns_per_byte": 11771,
+   "decomp_ns_per_byte": 9.4,
+   "note": ""
   },
   {
    "rank": 13,
@@ -188,7 +236,11 @@
    "silesia_total": 46499400,
    "silesia_entry": "bbb cfm100",
    "silesia_rank_in_set": 16,
-   "silesia_rank_full": 109
+   "silesia_rank_full": 109,
+   "bytes_rank": 13,
+   "comp_ns_per_byte": 4524,
+   "decomp_ns_per_byte": 2619,
+   "note": ""
   },
   {
    "rank": 14,
@@ -202,7 +254,11 @@
    "silesia_total": 46580660,
    "silesia_entry": "bcm 1.00 -b60",
    "silesia_rank_in_set": 17,
-   "silesia_rank_full": 111
+   "silesia_rank_full": 111,
+   "bytes_rank": 12,
+   "comp_ns_per_byte": 63,
+   "decomp_ns_per_byte": 34,
+   "note": ""
   },
   {
    "rank": 15,
@@ -216,7 +272,11 @@
    "silesia_total": 46723436,
    "silesia_entry": "bsc",
    "silesia_rank_in_set": 18,
-   "silesia_rank_full": 113
+   "silesia_rank_full": 113,
+   "bytes_rank": 14,
+   "comp_ns_per_byte": 23,
+   "decomp_ns_per_byte": 8,
+   "note": ""
   },
   {
    "rank": 16,
@@ -230,7 +290,11 @@
    "silesia_total": 46081934,
    "silesia_entry": "bwtmix_v1",
    "silesia_rank_in_set": 15,
-   "silesia_rank_full": 108
+   "silesia_rank_full": 108,
+   "bytes_rank": 15,
+   "comp_ns_per_byte": 1794,
+   "decomp_ns_per_byte": 690,
+   "note": ""
   },
   {
    "rank": 17,
@@ -244,7 +308,11 @@
    "silesia_total": 45542009,
    "silesia_entry": "freearc -m9",
    "silesia_rank_in_set": 13,
-   "silesia_rank_full": 105
+   "silesia_rank_full": 105,
+   "bytes_rank": 17,
+   "comp_ns_per_byte": 1175,
+   "decomp_ns_per_byte": 1216,
+   "note": ""
   },
   {
    "rank": 18,
@@ -258,7 +326,11 @@
    "silesia_total": 44006382,
    "silesia_entry": "ocamyd-1.65.final -m9 -s0",
    "silesia_rank_in_set": 12,
-   "silesia_rank_full": 99
+   "silesia_rank_full": 99,
+   "bytes_rank": 19,
+   "comp_ns_per_byte": null,
+   "decomp_ns_per_byte": 300,
+   "note": ""
   },
   {
    "rank": 19,
@@ -272,7 +344,11 @@
    "silesia_total": 45622742,
    "silesia_entry": "bee -m3 -d8",
    "silesia_rank_in_set": 14,
-   "silesia_rank_full": 106
+   "silesia_rank_full": 106,
+   "bytes_rank": 21,
+   "comp_ns_per_byte": 9295,
+   "decomp_ns_per_byte": 9285,
+   "note": ""
   },
   {
    "rank": 20,
@@ -286,7 +362,11 @@
    "silesia_total": 48287639,
    "silesia_entry": "dark 0.51 p-b64mrf",
    "silesia_rank_in_set": 23,
-   "silesia_rank_full": 141
+   "silesia_rank_full": 141,
+   "bytes_rank": 18,
+   "comp_ns_per_byte": 533,
+   "decomp_ns_per_byte": 453,
+   "note": ""
   },
   {
    "rank": 21,
@@ -300,7 +380,11 @@
    "silesia_total": 47021495,
    "silesia_entry": "ppmd -m256 -o16 -r1",
    "silesia_rank_in_set": 20,
-   "silesia_rank_full": 122
+   "silesia_rank_full": 122,
+   "bytes_rank": 22,
+   "comp_ns_per_byte": 880,
+   "decomp_ns_per_byte": 895,
+   "note": ""
   },
   {
    "rank": 22,
@@ -314,7 +398,11 @@
    "silesia_total": 48792760,
    "silesia_entry": "7zip -mx=9",
    "silesia_rank_in_set": 25,
-   "silesia_rank_full": 146
+   "silesia_rank_full": 146,
+   "bytes_rank": 20,
+   "comp_ns_per_byte": 503,
+   "decomp_ns_per_byte": 546,
+   "note": ""
   },
   {
    "rank": 23,
@@ -328,7 +416,11 @@
    "silesia_total": 48093438,
    "silesia_entry": "smac 1.20",
    "silesia_rank_in_set": 22,
-   "silesia_rank_full": 136
+   "silesia_rank_full": 136,
+   "bytes_rank": 23,
+   "comp_ns_per_byte": 4249,
+   "decomp_ns_per_byte": 4399,
+   "note": ""
   },
   {
    "rank": 24,
@@ -342,7 +434,11 @@
    "silesia_total": 47350998,
    "silesia_entry": "ppmvc -m256 -o8",
    "silesia_rank_in_set": 21,
-   "silesia_rank_full": 126
+   "silesia_rank_full": 126,
+   "bytes_rank": 24,
+   "comp_ns_per_byte": 898,
+   "decomp_ns_per_byte": 913,
+   "note": ""
   },
   {
    "rank": 25,
@@ -356,7 +452,11 @@
    "silesia_total": 51585706,
    "silesia_entry": "crook -O8 -m1000",
    "silesia_rank_in_set": 33,
-   "silesia_rank_full": 169
+   "silesia_rank_full": 169,
+   "bytes_rank": 25,
+   "comp_ns_per_byte": 483,
+   "decomp_ns_per_byte": 513,
+   "note": ""
   },
   {
    "rank": 26,
@@ -370,7 +470,11 @@
    "silesia_total": 50087841,
    "silesia_entry": "comprox 0.7.0 e200",
    "silesia_rank_in_set": 29,
-   "silesia_rank_full": 157
+   "silesia_rank_full": 157,
+   "bytes_rank": 27,
+   "comp_ns_per_byte": 917,
+   "decomp_ns_per_byte": 153,
+   "note": ""
   },
   {
    "rank": 27,
@@ -384,7 +488,11 @@
    "silesia_total": 51315815,
    "silesia_entry": "comprolz 0.11.0-bugfix1 -b100 -f -F",
    "silesia_rank_in_set": 32,
-   "silesia_rank_full": 165
+   "silesia_rank_full": 165,
+   "bytes_rank": 26,
+   "comp_ns_per_byte": 984,
+   "decomp_ns_per_byte": 308,
+   "note": ""
   },
   {
    "rank": 28,
@@ -398,7 +506,11 @@
    "silesia_total": 49921935,
    "silesia_entry": "lzham",
    "silesia_rank_in_set": 28,
-   "silesia_rank_full": 156
+   "silesia_rank_full": 156,
+   "bytes_rank": 28,
+   "comp_ns_per_byte": 1096,
+   "decomp_ns_per_byte": 6.6,
+   "note": ""
   },
   {
    "rank": 29,
@@ -412,7 +524,11 @@
    "silesia_total": 49766028,
    "silesia_entry": "csarc 3.3 -m5 -d512",
    "silesia_rank_in_set": 27,
-   "silesia_rank_full": 154
+   "silesia_rank_full": 154,
+   "bytes_rank": 29,
+   "comp_ns_per_byte": 621,
+   "decomp_ns_per_byte": 22,
+   "note": ""
   },
   {
    "rank": 30,
@@ -426,7 +542,11 @@
    "silesia_total": 48587633,
    "silesia_entry": "grzipii -b8m",
    "silesia_rank_in_set": 24,
-   "silesia_rank_full": 144
+   "silesia_rank_full": 144,
+   "bytes_rank": 30,
+   "comp_ns_per_byte": 312,
+   "decomp_ns_per_byte": 216,
+   "note": ""
   },
   {
    "rank": 31,
@@ -440,7 +560,11 @@
    "silesia_total": 49518314,
    "silesia_entry": "lzpxj 9",
    "silesia_rank_in_set": 26,
-   "silesia_rank_full": 151
+   "silesia_rank_full": 151,
+   "bytes_rank": 33,
+   "comp_ns_per_byte": 783,
+   "decomp_ns_per_byte": 717,
+   "note": ""
   },
   {
    "rank": 32,
@@ -454,7 +578,11 @@
    "silesia_total": 53240866,
    "silesia_entry": "tarsaLZP 19.nov.2012",
    "silesia_rank_in_set": 35,
-   "silesia_rank_full": 182
+   "silesia_rank_full": 182,
+   "bytes_rank": 31,
+   "comp_ns_per_byte": 203,
+   "decomp_ns_per_byte": null,
+   "note": ""
   },
   {
    "rank": 33,
@@ -468,7 +596,11 @@
    "silesia_total": 50297179,
    "silesia_entry": "brotli 18-Feb-2016 -q 11 -w 24",
    "silesia_rank_in_set": 30,
-   "silesia_rank_full": 158
+   "silesia_rank_full": 158,
+   "bytes_rank": 36,
+   "comp_ns_per_byte": 3400,
+   "decomp_ns_per_byte": 5.9,
+   "note": ""
   },
   {
    "rank": 34,
@@ -482,7 +614,11 @@
    "silesia_total": 53769687,
    "silesia_entry": "ctw -d6 -n16M -f16M",
    "silesia_rank_in_set": 38,
-   "silesia_rank_full": 189
+   "silesia_rank_full": 189,
+   "bytes_rank": 32,
+   "comp_ns_per_byte": 19221,
+   "decomp_ns_per_byte": 19524,
+   "note": ""
   },
   {
    "rank": 35,
@@ -496,7 +632,11 @@
    "silesia_total": 53321756,
    "silesia_entry": "zstd 0.6.0 -22",
    "silesia_rank_in_set": 37,
-   "silesia_rank_full": 185
+   "silesia_rank_full": 185,
+   "bytes_rank": 34,
+   "comp_ns_per_byte": 701,
+   "decomp_ns_per_byte": 2.2,
+   "note": ""
   },
   {
    "rank": 36,
@@ -510,7 +650,11 @@
    "silesia_total": 50941618,
    "silesia_entry": "szip -b41o16",
    "silesia_rank_in_set": 31,
-   "silesia_rank_full": 161
+   "silesia_rank_full": 161,
+   "bytes_rank": 38,
+   "comp_ns_per_byte": 1191,
+   "decomp_ns_per_byte": 289,
+   "note": ""
   },
   {
    "rank": 37,
@@ -524,7 +668,11 @@
    "silesia_total": 53278472,
    "silesia_entry": "tornado 0.6a -16",
    "silesia_rank_in_set": 36,
-   "silesia_rank_full": 183
+   "silesia_rank_full": 183,
+   "bytes_rank": 35,
+   "comp_ns_per_byte": 1482,
+   "decomp_ns_per_byte": 9,
+   "note": ""
   },
   {
    "rank": 38,
@@ -538,7 +686,11 @@
    "silesia_total": 54311038,
    "silesia_entry": "dmc c 1800000000",
    "silesia_rank_in_set": 40,
-   "silesia_rank_full": 194
+   "silesia_rank_full": 194,
+   "bytes_rank": 37,
+   "comp_ns_per_byte": 676,
+   "decomp_ns_per_byte": 721,
+   "note": ""
   },
   {
    "rank": 39,
@@ -552,7 +704,11 @@
    "silesia_total": 51846480,
    "silesia_entry": "ppms",
    "silesia_rank_in_set": 34,
-   "silesia_rank_full": 172
+   "silesia_rank_full": 172,
+   "bytes_rank": 40,
+   "comp_ns_per_byte": 330,
+   "decomp_ns_per_byte": 354,
+   "note": ""
   },
   {
    "rank": 40,
@@ -566,7 +722,11 @@
    "silesia_total": 54338214,
    "silesia_entry": "balz 1.20 cx",
    "silesia_rank_in_set": 41,
-   "silesia_rank_full": 195
+   "silesia_rank_full": 195,
+   "bytes_rank": 39,
+   "comp_ns_per_byte": 3700,
+   "decomp_ns_per_byte": 190,
+   "note": ""
   },
   {
    "rank": 41,
@@ -580,7 +740,11 @@
    "silesia_total": 54138610,
    "silesia_entry": "comprox_ba",
    "silesia_rank_in_set": 39,
-   "silesia_rank_full": 192
+   "silesia_rank_full": 192,
+   "bytes_rank": 41,
+   "comp_ns_per_byte": 397,
+   "decomp_ns_per_byte": 101,
+   "note": ""
   },
   {
    "rank": 42,
@@ -594,7 +758,11 @@
    "silesia_total": 54506769,
    "silesia_entry": "bzip2",
    "silesia_rank_in_set": 42,
-   "silesia_rank_full": 196
+   "silesia_rank_full": 196,
+   "bytes_rank": 42,
+   "comp_ns_per_byte": 379,
+   "decomp_ns_per_byte": 129,
+   "note": ""
   },
   {
    "rank": 43,
@@ -608,7 +776,11 @@
    "silesia_total": 60894733,
    "silesia_entry": "zling Jan-07-2016 e4",
    "silesia_rank_in_set": 45,
-   "silesia_rank_full": 217
+   "silesia_rank_full": 217,
+   "bytes_rank": 43,
+   "comp_ns_per_byte": 83,
+   "decomp_ns_per_byte": 27,
+   "note": ""
   },
   {
    "rank": 44,
@@ -622,7 +794,11 @@
    "silesia_total": 59499876,
    "silesia_entry": "sr3c",
    "silesia_rank_in_set": 43,
-   "silesia_rank_full": 211
+   "silesia_rank_full": 211,
+   "bytes_rank": 44,
+   "comp_ns_per_byte": 160,
+   "decomp_ns_per_byte": 145,
+   "note": ""
   },
   {
    "rank": 45,
@@ -636,7 +812,11 @@
    "silesia_total": 59682318,
    "silesia_entry": "ha a2",
    "silesia_rank_in_set": 44,
-   "silesia_rank_full": 212
+   "silesia_rank_full": 212,
+   "bytes_rank": 46,
+   "comp_ns_per_byte": 2010,
+   "decomp_ns_per_byte": 1800,
+   "note": ""
   },
   {
    "rank": 46,
@@ -650,7 +830,11 @@
    "silesia_total": 63753090,
    "silesia_entry": "crush 1.00 cx",
    "silesia_rank_in_set": 47,
-   "silesia_rank_full": 229
+   "silesia_rank_full": 229,
+   "bytes_rank": 45,
+   "comp_ns_per_byte": 948,
+   "decomp_ns_per_byte": 2.9,
+   "note": ""
   },
   {
    "rank": 47,
@@ -664,7 +848,11 @@
    "silesia_total": 62549515,
    "silesia_entry": "irolz",
    "silesia_rank_in_set": 46,
-   "silesia_rank_full": 222
+   "silesia_rank_full": 222,
+   "bytes_rank": 48,
+   "comp_ns_per_byte": 274,
+   "decomp_ns_per_byte": 144,
+   "note": ""
   },
   {
    "rank": 48,
@@ -678,7 +866,11 @@
    "silesia_total": 64767118,
    "silesia_entry": "xeloz 0.3.5.3 c889",
    "silesia_rank_in_set": 48,
-   "silesia_rank_full": 235
+   "silesia_rank_full": 235,
+   "bytes_rank": 47,
+   "comp_ns_per_byte": 1079,
+   "decomp_ns_per_byte": 8,
+   "note": ""
   },
   {
    "rank": 49,
@@ -692,7 +884,11 @@
    "silesia_total": 67147758,
    "silesia_entry": "lcssr -b7 -l9",
    "silesia_rank_in_set": 50,
-   "silesia_rank_full": 245
+   "silesia_rank_full": 245,
+   "bytes_rank": 49,
+   "comp_ns_per_byte": 8186,
+   "decomp_ns_per_byte": 8281,
+   "note": ""
   },
   {
    "rank": 50,
@@ -706,7 +902,11 @@
    "silesia_total": 67549420,
    "silesia_entry": "zlite",
    "silesia_rank_in_set": 52,
-   "silesia_rank_full": 250
+   "silesia_rank_full": 250,
+   "bytes_rank": 50,
+   "comp_ns_per_byte": 61,
+   "decomp_ns_per_byte": 28,
+   "note": ""
   },
   {
    "rank": 51,
@@ -720,7 +920,11 @@
    "silesia_total": 64910056,
    "silesia_entry": "uc2 -tst",
    "silesia_rank_in_set": 49,
-   "silesia_rank_full": 236
+   "silesia_rank_full": 236,
+   "bytes_rank": 52,
+   "comp_ns_per_byte": 360,
+   "decomp_ns_per_byte": 63,
+   "note": ""
   },
   {
    "rank": 52,
@@ -734,7 +938,11 @@
    "silesia_total": 69401448,
    "silesia_entry": "lazy -5",
    "silesia_rank_in_set": 55,
-   "silesia_rank_full": 257
+   "silesia_rank_full": 257,
+   "bytes_rank": 51,
+   "comp_ns_per_byte": 273,
+   "decomp_ns_per_byte": 24,
+   "note": ""
   },
   {
    "rank": 53,
@@ -748,7 +956,11 @@
    "silesia_total": 67469945,
    "silesia_entry": "lz5 1.3.3 -18",
    "silesia_rank_in_set": 51,
-   "silesia_rank_full": 249
+   "silesia_rank_full": 249,
+   "bytes_rank": 53,
+   "comp_ns_per_byte": 10578,
+   "decomp_ns_per_byte": 3.7,
+   "note": ""
   },
   {
    "rank": 54,
@@ -762,7 +974,11 @@
    "silesia_total": 67631990,
    "silesia_entry": "gzip -9",
    "silesia_rank_in_set": 53,
-   "silesia_rank_full": 251
+   "silesia_rank_full": 251,
+   "bytes_rank": 54,
+   "comp_ns_per_byte": 101,
+   "decomp_ns_per_byte": 17,
+   "note": ""
   },
   {
    "rank": 55,
@@ -776,7 +992,11 @@
    "silesia_total": 69196926,
    "silesia_entry": "doboz",
    "silesia_rank_in_set": 54,
-   "silesia_rank_full": 256
+   "silesia_rank_full": 256,
+   "bytes_rank": 55,
+   "comp_ns_per_byte": 533,
+   "decomp_ns_per_byte": 3.4,
+   "note": ""
   },
   {
    "rank": 56,
@@ -790,7 +1010,11 @@
    "silesia_total": 71658443,
    "silesia_entry": "urban",
    "silesia_rank_in_set": 56,
-   "silesia_rank_full": 264
+   "silesia_rank_full": 264,
+   "bytes_rank": 56,
+   "comp_ns_per_byte": 381,
+   "decomp_ns_per_byte": 450,
+   "note": ""
   },
   {
    "rank": 57,
@@ -804,7 +1028,11 @@
    "silesia_total": 73758385,
    "silesia_entry": "packARC 0.7RC11",
    "silesia_rank_in_set": 57,
-   "silesia_rank_full": 274
+   "silesia_rank_full": 274,
+   "bytes_rank": 57,
+   "comp_ns_per_byte": 1359,
+   "decomp_ns_per_byte": 1486,
+   "note": ""
   },
   {
    "rank": 58,
@@ -818,7 +1046,11 @@
    "silesia_total": 76317298,
    "silesia_entry": "lzop -9",
    "silesia_rank_in_set": 58,
-   "silesia_rank_full": 278
+   "silesia_rank_full": 278,
+   "bytes_rank": 58,
+   "comp_ns_per_byte": 289,
+   "decomp_ns_per_byte": 12,
+   "note": ""
   },
   {
    "rank": 59,
@@ -832,7 +1064,11 @@
    "silesia_total": 78596518,
    "silesia_entry": "lz4 -c2",
    "silesia_rank_in_set": 59,
-   "silesia_rank_full": 280
+   "silesia_rank_full": 280,
+   "bytes_rank": 59,
+   "comp_ns_per_byte": 91,
+   "decomp_ns_per_byte": 6,
+   "note": ""
   },
   {
    "rank": 60,
@@ -846,7 +1082,11 @@
    "silesia_total": 79829992,
    "silesia_entry": "mtari 0.2",
    "silesia_rank_in_set": 60,
-   "silesia_rank_full": 281
+   "silesia_rank_full": 281,
+   "bytes_rank": 61,
+   "comp_ns_per_byte": 80,
+   "decomp_ns_per_byte": 99,
+   "note": ""
   },
   {
    "rank": 61,
@@ -860,7 +1100,11 @@
    "silesia_total": 82568031,
    "silesia_entry": "brieflz 1.1.0",
    "silesia_rank_in_set": 61,
-   "silesia_rank_full": 283
+   "silesia_rank_full": 283,
+   "bytes_rank": 60,
+   "comp_ns_per_byte": 21,
+   "decomp_ns_per_byte": 7.5,
+   "note": ""
   },
   {
    "rank": 62,
@@ -874,7 +1118,11 @@
    "silesia_total": 90811017,
    "silesia_entry": "srank -O3 -C8",
    "silesia_rank_in_set": 63,
-   "silesia_rank_full": 287
+   "silesia_rank_full": 287,
+   "bytes_rank": 62,
+   "comp_ns_per_byte": 51,
+   "decomp_ns_per_byte": 45,
+   "note": ""
   },
   {
    "rank": 63,
@@ -888,7 +1136,11 @@
    "silesia_total": 89171919,
    "silesia_entry": "compress",
    "silesia_rank_in_set": 62,
-   "silesia_rank_full": 286
+   "silesia_rank_full": 286,
+   "bytes_rank": 64,
+   "comp_ns_per_byte": 103,
+   "decomp_ns_per_byte": 70,
+   "note": ""
   },
   {
    "rank": 64,
@@ -902,7 +1154,11 @@
    "silesia_total": 94730031,
    "silesia_entry": "quicklz",
    "silesia_rank_in_set": 67,
-   "silesia_rank_full": 292
+   "silesia_rank_full": 292,
+   "bytes_rank": 63,
+   "comp_ns_per_byte": 48,
+   "decomp_ns_per_byte": 12,
+   "note": ""
   },
   {
    "rank": 65,
@@ -916,7 +1172,11 @@
    "silesia_total": 91055019,
    "silesia_entry": "lzrw3-a",
    "silesia_rank_in_set": 64,
-   "silesia_rank_full": 288
+   "silesia_rank_full": 288,
+   "bytes_rank": 65,
+   "comp_ns_per_byte": 38,
+   "decomp_ns_per_byte": 17,
+   "note": ""
   },
   {
    "rank": 66,
@@ -930,7 +1190,11 @@
    "silesia_total": 93312365,
    "silesia_entry": "runcoder1",
    "silesia_rank_in_set": 65,
-   "silesia_rank_full": 289
+   "silesia_rank_full": 289,
+   "bytes_rank": 66,
+   "comp_ns_per_byte": 140,
+   "decomp_ns_per_byte": 156,
+   "note": ""
   },
   {
    "rank": 67,
@@ -944,7 +1208,11 @@
    "silesia_total": 93489370,
    "silesia_entry": "data-shrinker",
    "silesia_rank_in_set": 66,
-   "silesia_rank_full": 290
+   "silesia_rank_full": 290,
+   "bytes_rank": 67,
+   "comp_ns_per_byte": 14,
+   "decomp_ns_per_byte": 4,
+   "note": ""
   },
   {
    "rank": 68,
@@ -958,7 +1226,11 @@
    "silesia_total": 99562546,
    "silesia_entry": "flzp",
    "silesia_rank_in_set": 68,
-   "silesia_rank_full": 296
+   "silesia_rank_full": 296,
+   "bytes_rank": 70,
+   "comp_ns_per_byte": 78,
+   "decomp_ns_per_byte": 38,
+   "note": ""
   },
   {
    "rank": 69,
@@ -972,7 +1244,11 @@
    "silesia_total": 101623484,
    "silesia_entry": "sharc 0.9.11b -c2",
    "silesia_rank_in_set": 69,
-   "silesia_rank_full": 298
+   "silesia_rank_full": 298,
+   "bytes_rank": 69,
+   "comp_ns_per_byte": 15,
+   "decomp_ns_per_byte": 14,
+   "note": ""
   },
   {
    "rank": 70,
@@ -986,7 +1262,11 @@
    "silesia_total": 102197684,
    "silesia_entry": "alba 0.5.1 cd",
    "silesia_rank_in_set": 70,
-   "silesia_rank_full": 299
+   "silesia_rank_full": 299,
+   "bytes_rank": 71,
+   "comp_ns_per_byte": 239,
+   "decomp_ns_per_byte": 10,
+   "note": ""
   },
   {
    "rank": 71,
@@ -1000,7 +1280,11 @@
    "silesia_total": 115616502,
    "silesia_entry": "lzwc_bitwise 0.7",
    "silesia_rank_in_set": 73,
-   "silesia_rank_full": 312
+   "silesia_rank_full": 312,
+   "bytes_rank": 68,
+   "comp_ns_per_byte": 123,
+   "decomp_ns_per_byte": 134,
+   "note": ""
   },
   {
    "rank": 72,
@@ -1014,7 +1298,11 @@
    "silesia_total": 104733476,
    "silesia_entry": "snappy",
    "silesia_rank_in_set": 71,
-   "silesia_rank_full": 303
+   "silesia_rank_full": 303,
+   "bytes_rank": 72,
+   "comp_ns_per_byte": 25,
+   "decomp_ns_per_byte": 12,
+   "note": ""
   },
   {
    "rank": 73,
@@ -1028,7 +1316,11 @@
    "silesia_total": 105697738,
    "silesia_entry": "fpaq0f2",
    "silesia_rank_in_set": 72,
-   "silesia_rank_full": 305
+   "silesia_rank_full": 305,
+   "bytes_rank": 73,
+   "comp_ns_per_byte": 222,
+   "decomp_ns_per_byte": 207,
+   "note": ""
   },
   {
    "rank": 74,
@@ -1042,7 +1334,11 @@
    "silesia_total": 116657945,
    "silesia_entry": "ppp",
    "silesia_rank_in_set": 74,
-   "silesia_rank_full": 314
+   "silesia_rank_full": 314,
+   "bytes_rank": 74,
+   "comp_ns_per_byte": 80,
+   "decomp_ns_per_byte": 59,
+   "note": ""
   },
   {
    "rank": 75,
@@ -1056,7 +1352,11 @@
    "silesia_total": 133424415,
    "silesia_entry": "tinylzp 0.1",
    "silesia_rank_in_set": 75,
-   "silesia_rank_full": 320
+   "silesia_rank_full": 320,
+   "bytes_rank": 75,
+   "comp_ns_per_byte": 32,
+   "decomp_ns_per_byte": 38,
+   "note": ""
   }
  ]
 }
