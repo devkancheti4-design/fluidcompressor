@@ -48,7 +48,8 @@ On an ASUS laptop with a 12th Gen Intel Core i3-1215U and 7.7 GB of RAM, running
 
 - the full sealed test: **38 of 38 archives byte-identical to the Mac's**, 38 of 38 round trips exact;
 - 2.8 times the M4 Pro's time per file, peaking at 672 MB on the quick test;
-- hive mode, all 38 files on one thread: 11.3 minutes, peak 1.3 GB.
+- hive mode, all 38 files: **6.2 minutes on two threads** (peak 2.6 GB), against about 32 minutes for plain mode on one
+  thread.
 
 Details: `bench/results/windows_i3.md`.
 

@@ -9,13 +9,15 @@
 
 ## Full sealed test, all 38 files
 
-| mode | round trips exact | archives byte-identical to the Mac | time (1 thread) | peak memory |
-|---|---|---|---|---|
-| plain (`t`) | 38 of 38 | 38 of 38 | not recorded | — |
-| hive (`h`) | 38 of 38 | 38 of 38 | 493.1 s compress + 185.8 s decompress = 11.3 min | 1,342 MB |
+| mode | threads | round trips exact | archives byte-identical to the Mac | time | peak memory |
+|---|---:|---|---|---|---|
+| plain (`t`) | 1 | 38 of 38 | 38 of 38 | not recorded | — |
+| hive (`h`), earlier build | 1 | 38 of 38 | 38 of 38 | 493.1 s compress + 185.8 s decompress = 11.3 min | 1,342 MB |
+| hive (`h`), this repository's build | 2 | 38 of 38 | 38 of 38 | 280.7 s compress + 92.9 s decompress = **6.2 min** | 2,595 MB |
 
-The same 38 files take 172.5 s on the M4 Pro in hive mode on one thread (3.9 times faster than the i3). The plain run
-on the i3 was not timed; at the quick test's ratio it would take about 32 minutes, so the hive was about 2.9 times faster.
+The plain run on the i3 was not timed; at the quick test's ratio it would take about 32 minutes, so the current hive on
+two threads is about 5.2 times faster than plain mode on one. On the M4 Pro the same 38 files take 96.2 s in hive mode
+on two threads, 3.9 times faster than the i3.
 
 ## Quick test, 6 files, plain mode, 1 thread
 
@@ -39,9 +41,9 @@ round trips exact: 6 of 6 | archives byte-identical to the Mac: 6 of 6 | peak me
 Against the M4 Pro on the same six files (one thread): 2.79 times as long to compress, 2.72 times as long to decompress;
 every file falls between 2.4 and 3.3 times.
 
-## Since this run
+## Between the two hive builds
 
-The `fluid.exe` in this repository adds one change after these measurements: in hive mode each thread now reuses one
-working copy of the warmed model instead of allocating fresh memory for every file. The archives are unchanged (checked
-on all 38 files on the Mac); on the i3 the change targets the roughly 200 seconds the hive spent copying into fresh
-memory. It has not yet been re-timed on the i3.
+This repository's build differs from the earlier one in one way: in hive mode each thread reuses one working copy of the
+warmed model instead of allocating fresh memory for every file. The archives are unchanged on both machines. The two i3
+runs also differ in thread count, so the 1.8 times between them is not split between the two changes; on the Mac, going
+from one thread to two gives 1.79 times on its own, which suggests the second thread did most of the work on the i3.
